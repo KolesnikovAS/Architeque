@@ -37,3 +37,55 @@
         }
     }
 }
+
+.about{
+    overflow: hidden;
+    height: 1049px;
+    display: flex;
+    position: relative;
+    .promo{
+        width: 50%;
+        position: relative;
+        top: 132px;
+        left: 0;
+        ul{
+            margin: 172px 116px 0 auto;
+            width: 414px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            li{
+                line-height: 80px;
+                display: flex;
+                align-items: center;
+                span{
+                    margin-left: 7px;
+                    font-family: Poppins-Regular, sans-serif;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .discription{
+        background-image: url(../../Assets/images/Home/discriptionBG.png);
+        margin-left: 42px;
+        padding: 19px 0 0 26px;
+        width: 528px;
+        position: relative;
+        top: 178px;
+        h2{
+            line-height: 72px;
+            font-family: Poppins-Bold, sans-serif;
+            font-size: 48px;
+        }
+        p{
+            color: #6C6C6C;
+            text-align: right;
+            line-height: 24px;
+            font-family: Poppins-Medium, sans-serif;
+            font-size: 16px;
+        }
+
+    }
+
+}
