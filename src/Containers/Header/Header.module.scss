@@ -1,0 +1,103 @@
+header {
+    width: 100%;
+    max-width: 1920px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    .contacts_line {
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        background-color: black;
+        max-width: 1140px;
+        height: 51px;
+        display: flex;
+        align-items: center;
+        span:last-child {
+            margin-left: auto;
+            margin-right: 0;
+        }
+        span {
+            margin-right: 20px;
+            font-family: Poppins-Normal, sans-serif;
+            font-size: 12px;
+            color: white;
+        }
+        img {
+            margin-right: 6px;
+        }
+    }
+    .nav_line {
+        margin: 0 auto;
+        background-color: white;
+        max-width: 1140px;
+        height: 137px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        h1 {
+            font-family: Poppins-Bold, sans-serif;
+            font-size: 36px;
+            display: flex;
+            align-items: center;
+        }
+        h1:after {
+            display: flex;
+            content: "";
+            background-color: black;
+            width: 1px;
+            height: 64px;
+            margin-left: 83px;
+        }
+        button {
+            font-family: Poppins-SemiBold, sans-serif;
+            font-size: 16px;
+            color: black;
+            width: 142px;
+            height: 51px;
+            border: 2px solid black;
+        }
+        nav {
+            margin-left: auto;
+            ul {
+                display: flex;
+                li:last-child {
+                    margin-right: 72px;
+                }
+                li {
+                    margin-right: 48px;
+                    a.active {
+                        color: black;
+                    }
+                    a {
+                        font-family: Poppins-Medium, sans-serif;
+                        font-size: 16px;
+                        color: #989898;
+                    }
+                }
+            }
+        }
+    }
+}
+header:before {
+    top: 0;
+    left: 0;
+    height: 51px;
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+}
+header:after {
+    top: 51px;
+    left: 0;
+    height: 137px;
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
