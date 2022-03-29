@@ -1,7 +1,6 @@
 header {
     width: 100%;
     max-width: 1920px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     position: relative;
     .contacts_line {
         position: relative;
@@ -35,13 +34,13 @@ header {
         align-items: center;
         position: relative;
         z-index: 2;
-        h1 {
+        h2 {
             font-family: Poppins-Bold, sans-serif;
             font-size: 36px;
             display: flex;
             align-items: center;
         }
-        h1:after {
+        h2:after {
             display: flex;
             content: "";
             background-color: black;

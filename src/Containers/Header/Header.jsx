@@ -8,14 +8,14 @@ const Header = () => {
     return (
         <header>
             <div className={styles.contacts_line}>
-                <img src={mailIcon} />
+                <img src={mailIcon} alt="mail"/>
                 <span>mail@yourcompany.com</span>
-                <img src={phoneIcon} />
+                <img src={phoneIcon} alt="phone"/>
                 <span>+896 120 5889 (Toll free)</span>
                 <span>Mon - Sat | 10am - 7pm</span>
             </div>
             <div className={styles.nav_line}>
-                <h1>Architeque</h1>
+                <h2>Architeque</h2>
                 <nav>
                     <ul>
                         <li><NavLink className={({ isActive }) => `${isActive ? styles.active : ''}`} to="/">Home</NavLink></li>

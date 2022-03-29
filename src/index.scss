@@ -20,7 +20,7 @@
     font-family: Poppins-Medium;
     font-style: medium;
     font-weight: 500;
-    src: local(Poppins-Medium), url(Assets/fonts/Poppins-Bold.ttf);
+    src: local(Poppins-Medium), url(Assets/fonts/Poppins-Medium.ttf);
 }
 * {
     font-family: Poppins-Regular, sans-serif;
@@ -35,14 +35,16 @@ li {
     list-style: none;
 }
 button {
+    display: block;
     cursor: pointer;
     background: none;
     border: none;
     box-sizing: border-box;
 }
 section {
+    box-sizing: border-box;
     width: 100%;
-    background-color: none;
+    background-color: white;
 }
 body{
     max-width: 1920px;
