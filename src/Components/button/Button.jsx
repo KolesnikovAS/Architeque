@@ -3,7 +3,9 @@ import styles from "./Button.module.scss"
 
 const Button = (props) => {
     return (
-        <button style={{backgroundColor: props.backgroundColor, color: props.color}} className={styles.button}>
+        <button style={{backgroundColor: props.backgroundColor, 
+        color: props.color,
+        border: props.border}} className={styles.button}>
             {props.children}
         </button>
     )

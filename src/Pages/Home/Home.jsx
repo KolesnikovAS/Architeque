@@ -26,10 +26,10 @@ const Home = () => {
                 <div className={styles.promo}>
                     <video src="#" width="883px" height="419px" controls="controls" poster={videoPoster} />
                     <ul>
-                        <li><img src={brendIcon1} /><span>LOGOIPSUM</span></li>
-                        <li><img src={brendIcon2} /><span>logoipsum</span></li>
-                        <li><img src={brendIcon3} /><span>logoipsum</span></li>
-                        <li><img src={brendIcon4} /><span>LOGOIPSUM</span></li>
+                        <li><img src={brendIcon1} alt="brendicon" /><span>LOGOIPSUM</span></li>
+                        <li><img src={brendIcon2} alt="brendicon" /><span>logoipsum</span></li>
+                        <li><img src={brendIcon3} alt="brendicon" /><span>logoipsum</span></li>
+                        <li><img src={brendIcon4} alt="brendicon" /><span>LOGOIPSUM</span></li>
                     </ul>
                 </div>
                 <div className={styles.discription}>
@@ -39,6 +39,18 @@ const Home = () => {
                     <p style={{ marginTop: "197px" }}>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution."</p>
                     <p style={{ color: "#BFBFBF", fontFamily: "Poppins-Bold, san-serif" }}>Ramones Aoky</p>
                     <p style={{ color: "black", fontFamily: "Poppins-SemiBold, san-serif" }}>CEO Company</p>
+                </div>
+            </section>
+
+            <section className={styles.achievments}>
+                <div className={styles.achievments_content}>
+                    <div className={styles.achievments_title}>
+                        <h1>Professional teams</h1>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+                        <Button border={"2px solid white"} color={"white"}>Learn more</Button>
+                    </div>
+                    <div className={styles.achievments_numbers}><span>90%</span><p>Clients statisfied</p></div>
+                    <div className={styles.achievments_numbers}><span>95%</span><p>Projects success</p></div>
                 </div>
             </section>
         </main>

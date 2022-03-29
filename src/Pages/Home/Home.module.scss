@@ -89,3 +89,68 @@
     }
 
 }
+
+.achievments{
+    background-image: url(../../Assets/images/Home/achivmentsBG.jpg);
+    background-size: cover;
+    height: 527px;
+    position: relative;
+    color: white;
+    .achievments_content{
+        padding-top: 154px;
+        display: flex;
+        margin: 0 auto;
+        max-width: 1140px;
+        position: relative;
+        z-index: 2;
+        .achievments_title{
+            h1{
+                width: 660px;
+                line-height: 96px;
+                font-family: Poppins-Bold, sans-serif;
+                font-size: 64px;
+            }
+            p{
+                line-height: 24px;
+                font-family: Poppins-Medium, sans-serif;
+                font-size: 16px;
+                width: 515px;
+                margin-bottom: 31px;
+
+            }
+        }
+        .achievments_numbers{
+            display: flex;
+            align-items: center;
+            span{
+                margin-right: 14px;
+                box-sizing: border-box;
+                font-family: Poppins-Bold, sans-serif;
+                font-size: 24px;
+                text-align: center;
+                line-height: 103px;
+                height: 110px;
+                width: 110px;
+                border-radius: 50%;
+                border: 7px solid #353535;
+            }
+            p{
+                line-height: 27px;
+                font-family: Poppins-Medium, sans-serif;
+                font-size: 18px;
+                width: 100px;
+            }
+        }
+    }
+}
+.achievments:after{
+    z-index: 1;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
