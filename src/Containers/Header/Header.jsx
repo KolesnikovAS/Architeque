@@ -22,7 +22,7 @@ const Header = () => {
                         <li><NavLink className={({ isActive }) => `${isActive ? styles.active : ''}`} to="/About">About</NavLink></li>
                         <li><NavLink className={({ isActive }) => `${isActive ? styles.active : ''}`} to="/Services">Services</NavLink></li>
                         <li><NavLink className={({ isActive }) => `${isActive ? styles.active : ''}`} to="/Portfolio">Portfolio</NavLink></li>
-                        <li><NavLink className={({ isActive }) => `${isActive ? styles.active : ''}`} to="/Blog">Blog</NavLink></li>
+                        <li><NavLink className={({ isActive }) => `${isActive ? styles.active : ''}`} to="/Teams">Blog</NavLink></li>
                     </ul>
                 </nav>
                 <button>Let's start</button>
