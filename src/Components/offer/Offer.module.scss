@@ -1,0 +1,43 @@
+.offer{
+    border-left: 3px solid #D6D6D6;
+    width: 317px;
+    height: 279px;
+    box-sizing: border-box;
+    padding-top: 63px;
+    padding-left: 54px;
+    background-color: white;
+    position: relative;
+    h3{
+        line-height: 27px;
+        font-family: Poppins-Bold, sans-serif;
+        font-size: 18px; 
+        margin-bottom: 16px;
+    }
+    p{
+        text-align: left;
+        width: 209px;
+        color: #6C6C6C;
+        line-height: 21px;
+        font-family: Poppins-Medium, sans-serif;
+        font-size: 14px; 
+        margin-bottom: 16px;
+
+    }
+    button{
+        position: absolute;
+        top: 217px;
+        left: 190px;
+        color: #BFBFBF;
+        line-height: 21px;
+        font-family: Poppins-Bold, sans-serif;
+        font-size: 14px; 
+        display: flex;
+        align-items: center;
+        div{
+            margin-left: 5px;
+            box-sizing: border-box;
+            border: 4px solid transparent;
+            border-left: 5px solid #BFBFBF;
+        }
+    }
+}

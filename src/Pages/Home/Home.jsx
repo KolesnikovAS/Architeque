@@ -4,6 +4,7 @@ import slide1Img from "../../Assets/images/Home/slide1.jpg"
 import arrow from "../../Assets/images/Home/arrow.png"
 import videoPoster from "../../Assets/images/Home/videoPoster.jpg"
 import Button from "../../Components/button/Button";
+import Offer from "../../Components/offer/Offer"
 import brendIcon1 from "../../Assets/images/Home/brendicon1.png";
 import brendIcon2 from "../../Assets/images/Home/brendicon2.png";
 import brendIcon3 from "../../Assets/images/Home/brendicon3.png";
@@ -62,22 +63,34 @@ const Home = () => {
                         <h2>Why us?</h2>
                         <table>
                             <tr>
-                                <td><img src ={doubleCheck} alt="doublecheck"/><span>Profesional works</span></td>
-                                <td><img src ={doubleCheck} alt="doublecheck"/><span>Best value solutions</span></td>
+                                <td><img src={doubleCheck} alt="doublecheck" /><span>Profesional works</span></td>
+                                <td><img src={doubleCheck} alt="doublecheck" /><span>Best value solutions</span></td>
                             </tr>
                             <tr>
-                                <td><img src ={doubleCheck} alt="doublecheck"/><span>100% Guarantee</span></td>
-                                <td><img src ={doubleCheck} alt="doublecheck"/><span>High professional teams</span></td>
+                                <td><img src={doubleCheck} alt="doublecheck" /><span>100% Guarantee</span></td>
+                                <td><img src={doubleCheck} alt="doublecheck" /><span>High professional teams</span></td>
                             </tr>
                             <tr>
-                                <td><img src ={doubleCheck} alt="doublecheck"/><span>Profesional teams</span></td>
-                                <td><img src ={doubleCheck} alt="doublecheck"/><span>Architecture licensed</span></td>
+                                <td><img src={doubleCheck} alt="doublecheck" /><span>Profesional teams</span></td>
+                                <td><img src={doubleCheck} alt="doublecheck" /><span>Architecture licensed</span></td>
                             </tr>
                         </table>
                         <p>We’re committed to delivering eye-catching architect designs</p>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     </div>
-                    <img className={styles.advantages_content_image} src={advantagesImg} alt="design"/>
+                    <img className={styles.advantages_content_image} src={advantagesImg} alt="design" />
+                </div>
+            </section>
+
+            <section className={styles.services}>
+                <div className={styles.services_content}>
+                    <h1 className={styles.services_title}>Our Services</h1>
+                    <p className={styles.services_discription}>It is a long established fact that a reader will be distracted.</p>
+                    <div className={styles.offers_container}>
+                        <Offer title={"Interior Designs"} discription={"It is a long established fact that a reader will be distracted by the readable content."} />
+                        <Offer title={"Building Designs"} discription={"It is a long established fact that a reader will be distracted by the readable content."} />
+                        <Offer title={"Landscape Designs"} discription={"It is a long established fact that a reader will be distracted by the readable content."} />
+                    </div>
                 </div>
             </section>
         </main>
