@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./Offer.module.scss"
 
 const Offer = (props) => {

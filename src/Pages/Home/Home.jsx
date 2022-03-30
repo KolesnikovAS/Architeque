@@ -5,6 +5,7 @@ import arrow from "../../Assets/images/Home/arrow.png"
 import videoPoster from "../../Assets/images/Home/videoPoster.jpg"
 import Button from "../../Components/button/Button";
 import Offer from "../../Components/offer/Offer"
+import Banner from "../../Components/banner/Banner"
 import brendIcon1 from "../../Assets/images/Home/brendicon1.png";
 import brendIcon2 from "../../Assets/images/Home/brendicon2.png";
 import brendIcon3 from "../../Assets/images/Home/brendicon3.png";
@@ -93,6 +94,9 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            <Banner />
+
         </main>
     )
 }
