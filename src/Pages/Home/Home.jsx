@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.scss"
-import slide1 from "../../Assets/images/Home/slide1.jpg"
+import slide1Img from "../../Assets/images/Home/slide1.jpg"
 import arrow from "../../Assets/images/Home/arrow.png"
 import videoPoster from "../../Assets/images/Home/videoPoster.jpg"
 import Button from "../../Components/button/Button";
@@ -8,6 +8,8 @@ import brendIcon1 from "../../Assets/images/Home/brendicon1.png";
 import brendIcon2 from "../../Assets/images/Home/brendicon2.png";
 import brendIcon3 from "../../Assets/images/Home/brendicon3.png";
 import brendIcon4 from "../../Assets/images/Home/brendicon4.png";
+import advantagesImg from "../../Assets/images/Home/advantages.jpg"
+import doubleCheck from "../../Assets/images/Home/doublecheck.png"
 
 const Home = () => {
     return (
@@ -19,7 +21,7 @@ const Home = () => {
                     <button><img src={arrow} alt="arrow" /></button>
                     <button><img src={arrow} alt="arrow" /></button>
                 </div>
-                <img className={styles.slide_image} src={slide1} alt="design" />
+                <img className={styles.slide_image} src={slide1Img} alt="design" />
             </section>
 
             <section className={styles.about}>
@@ -51,6 +53,31 @@ const Home = () => {
                     </div>
                     <div className={styles.achievments_numbers}><span>90%</span><p>Clients statisfied</p></div>
                     <div className={styles.achievments_numbers}><span>95%</span><p>Projects success</p></div>
+                </div>
+            </section>
+
+            <section className={styles.advantages}>
+                <div className={styles.advantages_content}>
+                    <div className={styles.advantages_content_discription}>
+                        <h2>Why us?</h2>
+                        <table>
+                            <tr>
+                                <td><img src ={doubleCheck} alt="doublecheck"/><span>Profesional works</span></td>
+                                <td><img src ={doubleCheck} alt="doublecheck"/><span>Best value solutions</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src ={doubleCheck} alt="doublecheck"/><span>100% Guarantee</span></td>
+                                <td><img src ={doubleCheck} alt="doublecheck"/><span>High professional teams</span></td>
+                            </tr>
+                            <tr>
+                                <td><img src ={doubleCheck} alt="doublecheck"/><span>Profesional teams</span></td>
+                                <td><img src ={doubleCheck} alt="doublecheck"/><span>Architecture licensed</span></td>
+                            </tr>
+                        </table>
+                        <p>We’re committed to delivering eye-catching architect designs</p>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                    <img className={styles.advantages_content_image} src={advantagesImg} alt="design"/>
                 </div>
             </section>
         </main>

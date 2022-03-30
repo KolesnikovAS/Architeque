@@ -154,3 +154,59 @@
     top: 0;
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+.advantages{
+    height: 906px;
+    color: white;
+    &_content{
+        padding-top: 165px;
+        color: black;
+        display: flex;
+        max-width: 1140px;
+        margin: 0 auto;
+        &_image{
+            height: 579px;
+        }
+        &_discription{
+            h2{
+                width: 660px;
+                line-height: 72px;
+                font-family: Poppins-Bold, sans-serif;
+                font-size: 48px; 
+            }
+            table{
+                margin-top: 37px;
+                margin-bottom: 60px;
+                tr{
+                    line-height: 48px;
+                    td:first-child{
+                        width: 235px;
+                    }
+                    td{
+                        span{
+                            margin-left: 14.5px;
+                            line-height: 24px;
+                            font-family: Poppins-Medium, sans-serif;
+                            font-size: 16px; 
+                        }
+                    }
+                }
+            }
+            p{
+                width: 502px;
+                line-height: 27px;
+                font-family: Poppins-BoldItalic, sans-serif;
+                font-size: 18px; 
+            }
+            p:last-child{
+                margin-top: 12px;
+                width: 502px;
+                line-height: 21px;
+                font-family: Poppins-Medium, sans-serif;
+                font-size: 14px; 
+            }
+        }
+
+    }
+
+}

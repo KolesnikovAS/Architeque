@@ -17,6 +17,12 @@
     src: local(Poppins-Bold), url(Assets/fonts/Poppins-SemiBold.ttf);
 }
 @font-face {
+    font-family: Poppins-BoldItalic;
+    font-style: bolditalic;
+    font-weight: 700;
+    src: local(Poppins-BoldItalic), url(Assets/fonts/Poppins-BoldItalic.ttf);
+}
+@font-face {
     font-family: Poppins-Medium;
     font-style: medium;
     font-weight: 500;
