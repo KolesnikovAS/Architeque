@@ -26,13 +26,13 @@
             font-size: 16px;
         }
         button{
-            margin-left: 15.75px;
-            margin-top: 195px;
+            margin-left: 15px;
+            margin-top: 190px;
             line-height: 0;
             display: inline-block;
         }
         button:last-child{
-            margin-left: 31.5px;
+            margin-left: 30px;
             transform: rotate(180deg);
         }
     }
@@ -49,13 +49,13 @@
         top: 132px;
         left: 0;
         ul{
-            margin: 172px 116px 0 auto;
-            width: 414px;
+            margin: 135px 116px 0 auto;
+            width: 430px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             li{
-                line-height: 80px;
+                line-height: 100px;
                 display: flex;
                 align-items: center;
                 span{
@@ -77,8 +77,10 @@
             line-height: 72px;
             font-family: Poppins-Bold, sans-serif;
             font-size: 48px;
+            margin-bottom: 13px;
         }
         p{
+            width: 502px;
             color: #6C6C6C;
             text-align: right;
             line-height: 24px;
@@ -105,8 +107,8 @@
         z-index: 2;
         .achievments_title{
             h1{
-                width: 660px;
-                line-height: 96px;
+                width: 685px;
+                line-height: 90px;
                 font-family: Poppins-Bold, sans-serif;
                 font-size: 64px;
             }
@@ -118,6 +120,9 @@
                 margin-bottom: 31px;
 
             }
+        }
+        .achievments_numbers:last-child{
+            margin-left: 14px;
         }
         .achievments_numbers{
             display: flex;
@@ -165,18 +170,22 @@
         max-width: 1140px;
         margin: 0 auto;
         &_image{
+            margin-left: auto;
+            width: 513px;
             height: 579px;
         }
         &_discription{
+            width: 600px;
             h2{
+                margin-top: 91px;
                 width: 660px;
                 line-height: 72px;
                 font-family: Poppins-Bold, sans-serif;
                 font-size: 48px; 
             }
             table{
-                margin-top: 37px;
-                margin-bottom: 60px;
+                margin-top: 25px;
+                margin-bottom: 40px;
                 tr{
                     line-height: 48px;
                     td:first-child{
@@ -215,7 +224,7 @@
 
 .services{
     background-image: url(../../Assets/images/Home/servicesBG.jpg);
-    height: 777px;
+    height: 776px;
     &_content{
         padding-top: 142px;
         max-width: 1140px;
@@ -227,7 +236,7 @@
     }
     &_title{
         text-align: right;
-        line-height: 96px;
+        line-height: 90px;
         font-family: Poppins-Bold, sans-serif;
         font-size: 64px; 
     }

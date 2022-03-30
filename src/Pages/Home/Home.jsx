@@ -45,6 +45,7 @@ const Home = () => {
                     <p style={{ textAlign: "justify", marginBottom: "57px" }} >It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
                     <Button backgroundColor={"black"} color={"white"}>Learn More</Button>
                     <p style={{ marginTop: "197px" }}>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution."</p>
+                    <p>&nbsp;</p>
                     <p style={{ color: "#BFBFBF", fontFamily: "Poppins-Bold, san-serif" }}>Ramones Aoky</p>
                     <p style={{ color: "black", fontFamily: "Poppins-SemiBold, san-serif" }}>CEO Company</p>
                 </div>
