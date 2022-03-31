@@ -51,7 +51,7 @@ const About = () => {
 
             <section className={styles.teams}>
                 <div className={styles.teams_content}>
-                    <h1>Experts Team</h1>
+                    <h1>Experts Teams</h1>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
                     <ul>
                         <li><Stuff photo={stuffPhoto1} name={"Sarah Doe"} position={"Interior Designer"} /></li>

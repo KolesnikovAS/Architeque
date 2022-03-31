@@ -1,5 +1,5 @@
 .skills{
-    height: 834px;
+    height: 832px;
     background-color: white;
     &_content{
         padding-top: 150px;
@@ -7,13 +7,13 @@
         margin: 0 auto;
         display: flex;
         .skills_discription{
-            padding-top: 30px;
-            width: 515px;
+            padding-top: 10px;
+            width: 500px;
             margin-left: auto;
             h2{
-                font-size: 36px;
+                font-size: 48px;
                 font-family: Poppins-Bold, sans-serif;
-                margin-bottom: 34px;
+                margin-bottom: 15px;
             }
             p{
                 color: #6C6C6C;
@@ -21,11 +21,11 @@
                 line-height: 24px;
                 font-family: Poppins-Medium, sans-serif;
                 font-size: 16px;
-                margin-bottom: 40px;
+                margin-bottom: 31px;
             }
             h5{
                 display: flex;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
                 span{
                     color: black;
                     font-family: Poppins-Bold, sans-serif;
@@ -44,7 +44,7 @@
                 width: 100%;
                 background-color: #f2f2f2;
                 height: 15px;
-                margin-bottom: 40px;
+                margin-bottom: 34px;
             }
             .design_value:after{
                 content: "";
@@ -122,12 +122,12 @@
     width: 100%;
     background-color: white;
     &_content{
-        padding-top: 110px;
+        padding-top: 100px;
         max-width: 1140px;
         margin: 0 auto;
         h1{
             text-align: center;
-            font-size: 56px;
+            font-size: 60px;
             font-family: Poppins-Bold, sans-serif;
             line-height: 96px;
         }
@@ -141,7 +141,7 @@
             font-size: 16px;
         }
         ul{
-            padding: 60px 0 95px 0;
+            padding-top: 49px;
             display: flex;
             justify-content: space-around;
         }
@@ -152,7 +152,7 @@
     width: 100%;
     background-color: white;
     &_content{
-        padding-top: 110px;
+        padding-top: 87px;
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
@@ -164,11 +164,11 @@
         .puzzle_item{
             display: flex;
             align-items: center;
-            width: 47%;
+            width: 48%;
             height: 275px;
             background-size: cover;
             background-image: url(../../Assets/images/About/puzzle3.jpg);
-            margin-bottom: 50px;
+            margin-bottom: 52px;
             button{
                 margin: 0 auto;
             }
@@ -187,12 +187,11 @@
     }
 }
 
-
 .blog{
     width: 100%;
     background-color: white;
     &_content{
-        padding: 125px 0;
+        padding: 125px 0 128px 0;
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
@@ -203,6 +202,7 @@
         }
         .blog_discription{
             width: 50%;
+            padding-top: 10px;
             h2{
                 font-size: 56px;
                 font-family: Poppins-Bold, sans-serif;
@@ -214,7 +214,7 @@
                 line-height: 24px;
                 font-family: Poppins-Medium, sans-serif;
                 font-size: 16px;
-                margin-bottom: 50px;
+                margin-bottom: 58px;
             }
         }
     }
