@@ -7,6 +7,10 @@ import valueIcon2 from "../../Assets/images/About/icon2.png"
 import valueIcon3 from "../../Assets/images/About/icon3.png"
 import valueIcon4 from "../../Assets/images/About/icon4.png"
 import Value from "../../Components/Value/Value";
+import stuffPhoto1 from "../../Assets/images/Stuff/1.jpg"
+import stuffPhoto2 from "../../Assets/images/Stuff/2.jpg"
+import stuffPhoto3 from "../../Assets/images/Stuff/3.jpg"
+import Stuff from "../../Components/Stuff/Stuff";
 
 const About = () => {
     return (
@@ -42,7 +46,13 @@ const About = () => {
 
             <section className={styles.teams}>
                 <div className={styles.teams_content}>
-
+                    <h1>Experts Team</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+                    <ul>
+                        <li><Stuff photo={stuffPhoto1} name={"Sarah Doe"} position={"Interior Designer"}/></li>
+                        <li><Stuff photo={stuffPhoto2} name={"John Doe"} position={"Architect Building"}/></li>
+                        <li><Stuff photo={stuffPhoto3} name={"Smith Doe"} position={"Architect landscape"}/></li>
+                    </ul>
                 </div>
             </section>
         </main>
