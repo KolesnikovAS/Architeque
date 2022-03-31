@@ -186,3 +186,36 @@
         }
     }
 }
+
+
+.blog{
+    width: 100%;
+    background-color: white;
+    &_content{
+        padding: 125px 0;
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        .blog_posts{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .blog_discription{
+            width: 50%;
+            h2{
+                font-size: 56px;
+                font-family: Poppins-Bold, sans-serif;
+                line-height: 96px;
+            }
+            p{
+                width: 500px;
+                color: #6C6C6C;
+                line-height: 24px;
+                font-family: Poppins-Medium, sans-serif;
+                font-size: 16px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

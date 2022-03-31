@@ -12,7 +12,10 @@ import stuffPhoto2 from "../../Assets/images/Stuff/2.jpg"
 import stuffPhoto3 from "../../Assets/images/Stuff/3.jpg"
 import Stuff from "../../Components/Stuff/Stuff";
 import Button from "../../Components/button/Button";
-import puzzleImge1 from "../../Assets/images/About/puzzle1.jpg"
+import Post from "../../Components/Post/Post";
+import PostImage1 from "../../Assets/images/Post/post1.jpg"
+import PostImage2 from "../../Assets/images/Post/post2.jpg"
+
 
 const About = () => {
     return (
@@ -71,6 +74,21 @@ const About = () => {
                     </div>
                 </div>
             </section>
+
+            <section className={styles.blog}>
+                <div className={styles.blog_content}>
+                    <div className={styles.blog_discription}>
+                        <h2>From the blog</h2>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+                        <Button backgroundColor={"black"} color={"white"}>Learn More</Button>
+                    </div>
+                    <div className={styles.blog_posts}>
+                        <Post image={PostImage1} title={"Lorem ipsum dolor sit"} discription={"Reader will be distracted by the readable content"} />
+                        <Post image={PostImage2} title={"Lorem ipsum dolor sit"} discription={"Reader will be distracted by the readable content"} />
+                    </div>
+                </div>
+            </section>
+
         </main>
     )
 }
