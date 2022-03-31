@@ -1,8 +1,9 @@
 import React from "react";
 import PageTitle from "../../Components/PageTitle/PageTitle";
 import styles from "./Services.module.scss"
-import reasonsBG from "../../Assets/images/Services/reasonsbg.jpg"
+import reasonsBG from "../../Assets/images/Home/portfolioslide2.jpg"
 import Offer from "../../Components/offer/Offer";
+import statisticsImage from "../../Assets/images/Home/advantages.jpg"
 
 const Services = () => {
     return (
@@ -38,6 +39,26 @@ const Services = () => {
                         <Offer style={"gray"} title={"Interior Designs"} discription={"It is a long established fact that a reader will be distracted by the readable content."} />
                         <Offer style={"gray"} title={"Interior Designs"} discription={"It is a long established fact that a reader will be distracted by the readable content."} />
                     </div>
+                </div>
+            </section>
+
+            <section className={styles.statistics}>
+                <div className={styles.statistics_content}>
+                    <div className={styles.statistics_discription}>
+                        <h2>Services statistics</h2>
+                        <table>
+                            <tr>
+                                <td><span>90%</span><p>Clients Statisfied</p></td>
+                                <td><span>95%</span><p>Projects Success</p></td>
+                            </tr>
+                            <tr>
+                                <td><span>85%</span><p>Client Trust</p></td>
+                                <td><span>95%</span><p>Design Functiinality</p></td>
+                            </tr>
+                        </table>
+                        <p className={styles.notes}>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    </div>
+                    <img className={styles.statstics_image} src={statisticsImage} alt="design" />
                 </div>
             </section>
 

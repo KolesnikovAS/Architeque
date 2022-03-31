@@ -1,17 +1,17 @@
-.reasons{
+.reasons {
     width: 100%;
     background-color: white;
-    &_content{
+    &_content {
         padding: 125px 0 128px 0;
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
         position: relative;
-        img{
+        img {
             height: 638px;
             width: 725px;
         }
-        .reasons_value{
+        .reasons_value {
             box-sizing: border-box;
             padding: 75px;
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
@@ -20,38 +20,38 @@
             top: 225px;
             width: 560px;
             background-color: white;
-            h1{
+            h1 {
                 line-height: 96px;
                 font-family: Poppins-Bold, sans-serif;
                 font-size: 64px;
             }
-            p{
+            p {
                 width: 100%;
                 color: #757575;
                 line-height: 24px;
                 font-family: Poppins-Medium, sans-serif;
                 font-size: 16px;
             }
-            table{
+            table {
                 padding-top: 30px;
                 width: 100%;
-                tr:first-child{
+                tr:first-child {
                     height: 100px;
                 }
-                tr{
-                    td:last-child{
+                tr {
+                    td:last-child {
                         border-left: 1px solid black;
                         padding-left: 60px;
                     }
-                    td{
+                    td {
                         vertical-align: top;
                         width: 50%;
-                        h2{
+                        h2 {
                             line-height: 48px;
                             font-family: Poppins-Bold, sans-serif;
                             font-size: 48px;
                         }
-                        span{
+                        span {
                             color: #757575;
                             line-height: 24px;
                             font-family: Poppins-Medium, sans-serif;
@@ -60,35 +60,99 @@
                     }
                 }
             }
-
         }
     }
 }
 
-.offers{
+.offers {
     width: 100%;
     background-color: white;
-    &_content{
+    &_content {
         padding: 125px 0 128px 0;
         max-width: 1140px;
         margin: 0 auto;
         position: relative;
-        h1{
+        h1 {
             line-height: 96px;
             font-family: Poppins-Bold, sans-serif;
             font-size: 64px;
         }
-        p{
+        p {
             width: 100%;
             color: #757575;
             line-height: 24px;
             font-family: Poppins-Medium, sans-serif;
             font-size: 16px;
         }
-        .offers_container{
+        .offers_container {
             justify-content: space-between;
             padding: 125px 0;
             display: flex;
+        }
+    }
+}
+
+.statistics {
+    width: 100%;
+    background-color: white;
+    &_content {
+        padding: 125px 0 128px 0;
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        .statistics_discription {
+            padding-top: 50px;
+            width: 500px;
+            h2 {
+                line-height: 64px;
+                font-family: Poppins-Bold, sans-serif;
+                font-size: 48px;
+            }
+            .notes {
+                width: 100%;
+                color: #757575;
+                line-height: 24px;
+                font-family: Poppins-Medium, sans-serif;
+                font-size: 16px;
+            }
+            table {
+                margin-bottom: 40px;
+                tr {
+                    td {
+                        padding-top: 20px;
+                        width: 50%;
+                        height: 100px;
+                        span {
+                            display: inline-block;
+                            margin-right: 14px;
+                            box-sizing: border-box;
+                            font-family: Poppins-Bold, sans-serif;
+                            font-size: 24px;
+                            text-align: center;
+                            line-height: 90px;
+                            height: 100px;
+                            width: 100px;
+                            border-radius: 50%;
+                            border: 7px solid #d3d3d3;
+                        }
+                        p {
+                            margin-top: 25px;
+                            height: 50px;
+                            vertical-align: top;
+                            display: inline-block;
+                            line-height: 27px;
+                            font-family: Poppins-Medium, sans-serif;
+                            font-size: 18px;
+                            width: 100px;                     
+                        }
+                    }
+                }
+            }
+        }
+        .statstics_image {
+            margin-left: auto;
+            width: 513px;
+            height: 579px;
         }
     }
 }
