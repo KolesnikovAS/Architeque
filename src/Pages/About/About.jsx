@@ -64,13 +64,13 @@ const About = () => {
             <section className={styles.puzzle}>
                 <div className={styles.puzzle_content}>
                     <div className={styles.puzzle_item}>
-                        <Button border={"2px solid white"} color={"white"}>View Services</Button>
+                        <Button style={"white"} title={"View Services"} />
                     </div>
                     <div className={styles.puzzle_item}>
-                        <Button border={"2px solid white"} color={"white"}>View Teams</Button>
+                        <Button style={"white"} title={"View Teams"} />
                     </div>
                     <div className={styles.puzzle_line}>
-                        <Button border={"2px solid white"} color={"white"}>View Portfolio</Button>
+                        <Button style={"white"} title={"View Portfolio"} />
                     </div>
                 </div>
             </section>

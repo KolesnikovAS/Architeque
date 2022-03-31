@@ -4,6 +4,7 @@ import styles from "./Services.module.scss"
 import reasonsBG from "../../Assets/images/Home/portfolioslide2.jpg"
 import Offer from "../../Components/offer/Offer";
 import statisticsImage from "../../Assets/images/Home/advantages.jpg"
+import Button from "../../Components/button/Button"
 
 const Services = () => {
     return (
@@ -59,6 +60,14 @@ const Services = () => {
                         <p className={styles.notes}>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     </div>
                     <img className={styles.statstics_image} src={statisticsImage} alt="design" />
+                </div>
+            </section>
+
+            <section className={styles.order}>
+                <div className={styles.order_content}>
+                    <h1>Get service now</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
+                    <Button style={"white"} title={"Contact Us"}/>
                 </div>
             </section>
 
