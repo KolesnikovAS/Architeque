@@ -11,15 +11,17 @@ import stuffPhoto1 from "../../Assets/images/Stuff/1.jpg"
 import stuffPhoto2 from "../../Assets/images/Stuff/2.jpg"
 import stuffPhoto3 from "../../Assets/images/Stuff/3.jpg"
 import Stuff from "../../Components/Stuff/Stuff";
+import Button from "../../Components/button/Button";
+import puzzleImge1 from "../../Assets/images/About/puzzle1.jpg"
 
 const About = () => {
     return (
         <main>
-            <PageTitle title={"About"}/>
+            <PageTitle title={"About"} />
 
             <section className={styles.skills}>
                 <div className={styles.skills_content}>
-                    <img src={skillsImg} alt="building"/>
+                    <img src={skillsImg} alt="building" />
                     <div className={styles.skills_discription}>
                         <h2>Company skills</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
@@ -49,10 +51,24 @@ const About = () => {
                     <h1>Experts Team</h1>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
                     <ul>
-                        <li><Stuff photo={stuffPhoto1} name={"Sarah Doe"} position={"Interior Designer"}/></li>
-                        <li><Stuff photo={stuffPhoto2} name={"John Doe"} position={"Architect Building"}/></li>
-                        <li><Stuff photo={stuffPhoto3} name={"Smith Doe"} position={"Architect landscape"}/></li>
+                        <li><Stuff photo={stuffPhoto1} name={"Sarah Doe"} position={"Interior Designer"} /></li>
+                        <li><Stuff photo={stuffPhoto2} name={"John Doe"} position={"Architect Building"} /></li>
+                        <li><Stuff photo={stuffPhoto3} name={"Smith Doe"} position={"Architect landscape"} /></li>
                     </ul>
+                </div>
+            </section>
+
+            <section className={styles.puzzle}>
+                <div className={styles.puzzle_content}>
+                    <div className={styles.puzzle_item}>
+                        <Button border={"2px solid white"} color={"white"}>View Services</Button>
+                    </div>
+                    <div className={styles.puzzle_item}>
+                        <Button border={"2px solid white"} color={"white"}>View Teams</Button>
+                    </div>
+                    <div className={styles.puzzle_line}>
+                        <Button border={"2px solid white"} color={"white"}>View Portfolio</Button>
+                    </div>
                 </div>
             </section>
         </main>
