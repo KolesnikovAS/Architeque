@@ -1,0 +1,92 @@
+.skills{
+    height: 834px;
+    background-color: white;
+    &_content{
+        padding-top: 150px;
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        .skills_discription{
+            padding-top: 30px;
+            width: 515px;
+            margin-left: auto;
+            h2{
+                font-size: 36px;
+                font-family: Poppins-Bold, sans-serif;
+                margin-bottom: 34px;
+            }
+            p{
+                color: #6C6C6C;
+                text-align: left;
+                line-height: 24px;
+                font-family: Poppins-Medium, sans-serif;
+                font-size: 16px;
+                margin-bottom: 40px;
+            }
+            h5{
+                display: flex;
+                margin-bottom: 15px;
+                span{
+                    color: black;
+                    font-family: Poppins-Bold, sans-serif;
+                    font-size: 16px;
+                }
+                b{
+                    margin-left: auto;
+                    color: black;
+                    font-family: Poppins-Bold, sans-serif;
+                    font-size: 16px;
+                }
+
+            }
+            div{
+                position: relative;
+                width: 100%;
+                background-color: #f2f2f2;
+                height: 15px;
+                margin-bottom: 40px;
+            }
+            .design_value:after{
+                content: "";
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                width: 90%;
+                height: 15px;
+                background-color: black;
+            }
+            .concept_value:after{
+                content: "";
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                width: 80%;
+                height: 15px;
+                background-color: black;
+            }
+            .deadline_value:after{
+                content: "";
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                width: 95%;
+                height: 15px;
+                background-color: black;
+            }
+            .result_value:after{
+                content: "";
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                width: 85%;
+                height: 15px;
+                background-color: black;
+            }
+        }
+    }
+
+}
