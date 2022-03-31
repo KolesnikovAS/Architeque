@@ -2,6 +2,7 @@ import React from "react";
 import PageTitle from "../../Components/PageTitle/PageTitle";
 import styles from "./Services.module.scss"
 import reasonsBG from "../../Assets/images/Services/reasonsbg.jpg"
+import Offer from "../../Components/offer/Offer";
 
 const Services = () => {
     return (
@@ -27,7 +28,19 @@ const Services = () => {
                     </div>
                 </div>
             </section>
-            
+
+            <section className={styles.offers}>
+                <div className={styles.offers_content}>
+                    <h1>Focus Sevices</h1>
+                    <p>It is a long established fact that a reader will be distracted.</p>
+                    <div className={styles.offers_container}>
+                        <Offer style={"gray"} title={"Interior Designs"} discription={"It is a long established fact that a reader will be distracted by the readable content."} />
+                        <Offer style={"gray"} title={"Interior Designs"} discription={"It is a long established fact that a reader will be distracted by the readable content."} />
+                        <Offer style={"gray"} title={"Interior Designs"} discription={"It is a long established fact that a reader will be distracted by the readable content."} />
+                    </div>
+                </div>
+            </section>
+
         </main>
     )
 }

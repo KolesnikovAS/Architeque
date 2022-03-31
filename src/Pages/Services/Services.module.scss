@@ -64,3 +64,31 @@
         }
     }
 }
+
+.offers{
+    width: 100%;
+    background-color: white;
+    &_content{
+        padding: 125px 0 128px 0;
+        max-width: 1140px;
+        margin: 0 auto;
+        position: relative;
+        h1{
+            line-height: 96px;
+            font-family: Poppins-Bold, sans-serif;
+            font-size: 64px;
+        }
+        p{
+            width: 100%;
+            color: #757575;
+            line-height: 24px;
+            font-family: Poppins-Medium, sans-serif;
+            font-size: 16px;
+        }
+        .offers_container{
+            justify-content: space-between;
+            padding: 125px 0;
+            display: flex;
+        }
+    }
+}
