@@ -2,28 +2,28 @@
     width: 100%;
     background-color: white;
     &_content {
-        padding: 125px 0 128px 0;
+        padding: 135px 0 134px 0;
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
         position: relative;
         img {
-            height: 638px;
-            width: 725px;
+            height: 645px;
+            width: 728px;
         }
         .reasons_value {
             box-sizing: border-box;
-            padding: 75px;
+            padding: 64px 75px 67px 81px;
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
             position: absolute;
             left: 50%;
-            top: 225px;
-            width: 560px;
+            top: 224px;
+            width: 570px;
             background-color: white;
             h1 {
-                line-height: 96px;
+                line-height: 76px;
                 font-family: Poppins-Bold, sans-serif;
-                font-size: 64px;
+                font-size: 50px;
             }
             p {
                 width: 100%;
@@ -33,29 +33,29 @@
                 font-size: 16px;
             }
             table {
-                padding-top: 30px;
+                padding-top: 46px;
                 width: 100%;
                 tr:first-child {
-                    height: 100px;
+                    height: 81px;
                 }
                 tr {
                     td:last-child {
                         border-left: 1px solid black;
-                        padding-left: 60px;
+                        padding-left: 49px;
                     }
                     td {
                         vertical-align: top;
                         width: 50%;
                         h2 {
-                            line-height: 48px;
+                            line-height: 36px;
                             font-family: Poppins-Bold, sans-serif;
-                            font-size: 48px;
+                            font-size: 36px;
                         }
                         span {
                             color: #757575;
                             line-height: 24px;
                             font-family: Poppins-Medium, sans-serif;
-                            font-size: 16px;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -68,7 +68,6 @@
     width: 100%;
     background-color: white;
     &_content {
-        padding: 125px 0 128px 0;
         max-width: 1140px;
         margin: 0 auto;
         position: relative;
@@ -86,7 +85,7 @@
         }
         .offers_container {
             justify-content: space-between;
-            padding: 125px 0;
+            padding: 66px 0;
             display: flex;
         }
     }
@@ -96,12 +95,12 @@
     width: 100%;
     background-color: white;
     &_content {
-        padding: 125px 0 128px 0;
+        padding: 70px 0 138px 0;
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
         .statistics_discription {
-            padding-top: 50px;
+            padding-top: 72px;
             width: 500px;
             h2 {
                 line-height: 64px;
@@ -109,19 +108,23 @@
                 font-size: 48px;
             }
             .notes {
+                padding-left: 20px;
                 width: 100%;
                 color: #757575;
-                line-height: 24px;
+                line-height: 22px;
                 font-family: Poppins-Medium, sans-serif;
-                font-size: 16px;
+                font-size: 14px;
             }
             table {
-                margin-bottom: 40px;
+                margin: 32px 0 45px 0;
                 tr {
+                    td:last-child{
+                        padding-left: 14px;
+                    }
                     td {
-                        padding-top: 20px;
+                        padding-left: 18px;
+                        padding-top: 17px;
                         width: 50%;
-                        height: 100px;
                         span {
                             display: inline-block;
                             margin-right: 14px;
@@ -129,14 +132,14 @@
                             font-family: Poppins-Bold, sans-serif;
                             font-size: 24px;
                             text-align: center;
-                            line-height: 90px;
-                            height: 100px;
-                            width: 100px;
+                            line-height: 102px;
+                            height: 110px;
+                            width: 110px;
                             border-radius: 50%;
                             border: 7px solid #d3d3d3;
                         }
                         p {
-                            margin-top: 25px;
+                            margin-top: 30px;
                             height: 50px;
                             vertical-align: top;
                             display: inline-block;
@@ -165,7 +168,7 @@
     position: relative;
     color: white;
     &_content{
-        padding-top: 165px;
+        padding-top: 150px;
         margin: 0 auto;
         max-width: 1140px;
         position: relative;
@@ -178,6 +181,7 @@
             font-size: 64px;
         }
         p{
+            text-align: center;
             margin: 0 auto;
             color: white;
             width: 500px;
@@ -186,7 +190,7 @@
             font-size: 16px;
         }
         button{
-            margin: 40px auto 0 auto;
+            margin: 29px auto;
         }
     }
 }

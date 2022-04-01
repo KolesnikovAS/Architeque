@@ -15,7 +15,7 @@ const Services = () => {
                 <div className={styles.reasons_content}>
                     <img src={reasonsBG} />
                     <div className={styles.reasons_value}>
-                        <h1>Reasons</h1>
+                        <h1>The reasons</h1>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                         <table>
                             <tr>
