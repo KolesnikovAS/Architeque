@@ -7,7 +7,7 @@ import Footer from "./Containers/Footer/Footer";
 import Services from "./Pages/Services/Services";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Teams from "./Pages/Teams/Teams";
-import Contacts from "./Pages/Contact/Contacts";
+import Contacts from "./Pages/Contacts/Contacts";
 
 const App = () => {
     return (

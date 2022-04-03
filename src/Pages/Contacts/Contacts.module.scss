@@ -22,7 +22,20 @@
             font-family: Poppins-Medium, sans-serif;
             font-size: 16px;
         }
+        .contacts_container:after{
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-image: url(../../Assets/images/Banner/banner.png);
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+        }
         .contacts_container {
+            position: relative;
             margin-top: 47px;
             padding: 63px 0 67px 44px;
             box-sizing: border-box;

@@ -13,35 +13,3 @@ const Value = (props) => {
 }
 
 export default Value;
-
-
-// import PropTypes from 'prop-types';
-
-// function App() {
-//     return (
-//         <Button
-//             icon={
-//                 <Icon type="helper" />
-//             }
-//         />
-//     );
-// }
-
-// const Button = (size, style, title, icon) => {
-//     return (
-//         <button className={${styles[size]} ${styles[style]}}> { title || icon}</button >
-//   )
-// }
-
-// Button.propTypes = {
-//     size: PropTypes.oneOf(['small', 'big']),
-//     style: PropTypes.oneOf(['black', 'white']),
-//     title: PropTypes.string,
-//     icon: PropTypes.node,
-// };
-// Button.defaultProps = {
-//     size: 'small',
-//     style: 'black',
-// };
-
-// export default Button;
