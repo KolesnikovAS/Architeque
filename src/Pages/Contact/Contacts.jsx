@@ -32,7 +32,7 @@ const Contacts = () => {
             </section>
 
             <section className={styles.google_map}>
-                <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1nDAPw1IBm4lTOFJe-Vh0w3kdBwW4VmfN&ehbc=2E312F" width="1920" height="535" title="map"></iframe>
+                <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1nDAPw1IBm4lTOFJe-Vh0w3kdBwW4VmfN&ehbc=2E312F" width="1920" height="545" title="map"></iframe>
             </section>
 
 

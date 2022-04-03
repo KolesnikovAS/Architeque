@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.scss"
-import mailIcon from "../../Assets/images/Header/mailicon.svg"
-import phoneIcon from "../../Assets/images/Header/phoneicon.svg"
+import mailIcon from "../../Assets/images/Header/mail.png"
+import phoneIcon from "../../Assets/images/Header/phone.png"
 
 const Header = () => {
     return (
