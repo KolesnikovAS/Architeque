@@ -2,9 +2,9 @@ import React from "react";
 import PageTitle from "../../Containers/PageTitle/PageTitle";
 import styles from "./Services.module.scss"
 import reasonsBG from "../../Assets/images/PortfolioSlider/portfolioslide2.jpg"
-import Offer from "../../Components/offer/Offer";
+import Offer from "../../Components/Offer/Offer";
 import statisticsImage from "../../Assets/images/Home/advantages.jpg"
-import Button from "../../Components/button/Button"
+import Button from "../../Components/Button/Button"
 
 const Services = () => {
     return (

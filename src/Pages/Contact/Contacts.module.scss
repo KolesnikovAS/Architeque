@@ -1,0 +1,96 @@
+.contacts {
+    width: 100%;
+    background-color: white;
+    &_content {
+        padding: 100px 0 136px 0;
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        h2 {
+            text-align: right;
+            line-height: 64px;
+            font-family: Poppins-Bold, sans-serif;
+            font-size: 48px;
+        }
+        .notes {
+            margin-top: 12px;
+            width: 500px;
+            color: #757575;
+            line-height: 22px;
+            font-family: Poppins-Medium, sans-serif;
+            font-size: 16px;
+        }
+        .contacts_container {
+            margin-top: 47px;
+            padding: 63px 0 67px 44px;
+            box-sizing: border-box;
+            background-color: black;
+            width: 371px;
+            color: white;
+            h3 {
+                font-family: Poppins-SemiBold, sans-serif;
+                font-size: 36px;
+                margin-bottom: 42px;
+                position: relative;
+            }
+            h3:after {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 1px;
+                background-color: #a5a5a5;
+                width: 200px;
+                top: 70px;
+                left: 0;
+            }
+            h5 {
+                font-family: Poppins-Bold, sans-serif;
+                font-size: 16px;
+                margin-bottom: 7px;
+                position: relative;
+            }
+            h5:after {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 1px;
+                background-color: #a5a5a5;
+                width: 200px;
+                top: 100px;
+                left: 0;
+            }
+            p {
+                font-size: 14px;
+                font-family: Poppins-Medium, sans-serif;
+            }
+            ul {
+                width: 265px;
+                margin-top: 55px;
+                li {
+                    line-height: 21px;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 7px;
+                    p {
+                        margin-left: 13px;
+                        width: 284px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.google_map{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: -57px;
+    iframe{
+        position: relative;
+        top: -50px;
+        left: -2px;
+
+    }
+}

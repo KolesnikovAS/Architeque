@@ -11,7 +11,7 @@ import stuffPhoto1 from "../../Assets/images/Stuff/1.jpg"
 import stuffPhoto2 from "../../Assets/images/Stuff/2.jpg"
 import stuffPhoto3 from "../../Assets/images/Stuff/3.jpg"
 import Stuff from "../../Components/Stuff/Stuff";
-import Button from "../../Components/button/Button";
+import Button from "../../Components/Button/Button";
 import Post from "../../Components/Post/Post";
 import PostImage1 from "../../Assets/images/Post/post1.jpg"
 import PostImage2 from "../../Assets/images/Post/post2.jpg"

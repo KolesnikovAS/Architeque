@@ -1,6 +1,6 @@
 import React from "react";
 import PageTitle from "../../Containers/PageTitle/PageTitle";
-import Banner from "../../Containers/banner/Banner"
+import Banner from "../../Containers/Banner/Banner"
 import styles from "./Portfolio.module.scss"
 import portfolioImage1 from "../../Assets/images/Portfolio/1.jpg"
 import portfolioImage2 from "../../Assets/images/Portfolio/2.jpg"

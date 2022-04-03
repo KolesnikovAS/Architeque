@@ -1,6 +1,6 @@
 import React from "react";
 import PageTitle from "../../Containers/PageTitle/PageTitle";
-import Banner from "../../Containers/banner/Banner";
+import Banner from "../../Containers/Banner/Banner";
 import styles from "./Teams.module.scss";
 import Stuff from "../../Components/Stuff/Stuff"
 import stuffPhoto1 from "../../Assets/images/Stuff/1.jpg";
@@ -10,7 +10,7 @@ import stuffPhoto4 from "../../Assets/images/Stuff/4.jpg";
 import stuffPhoto5 from "../../Assets/images/Stuff/5.jpg";
 import stuffPhoto6 from "../../Assets/images/Stuff/6.jpg";
 import PortfolioSlider from "../../Containers/PortfolioSlider/PortfolioSlider";
-import Feedback from "../../Components/feedback/Feedback";
+import Feedback from "../../Components/Feedback/Feedback";
 import feedbackPhoto1 from "../../Assets/images/Feedback/4.jpg"
 
 

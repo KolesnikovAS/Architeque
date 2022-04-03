@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../Components/button/Button";
+import Button from "../../Components/Button/Button";
 import styles from "./Banner.module.scss"
 import bgimage from "../../Assets/images/Banner/banner.png"
 

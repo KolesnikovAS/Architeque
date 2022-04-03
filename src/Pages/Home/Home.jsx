@@ -3,9 +3,9 @@ import styles from "./Home.module.scss"
 import slide1Img from "../../Assets/images/Home/slide1.jpg"
 import arrow from "../../Assets/images/Home/arrow.png"
 import videoPoster from "../../Assets/images/Home/videoPoster.jpg"
-import Button from "../../Components/button/Button";
-import Offer from "../../Components/offer/Offer"
-import Banner from "../../Containers/banner/Banner"
+import Button from "../../Components/Button/Button";
+import Offer from "../../Components/Offer/Offer"
+import Banner from "../../Containers/Banner/Banner"
 import brendIcon1 from "../../Assets/images/Home/brendicon1.png";
 import brendIcon2 from "../../Assets/images/Home/brendicon2.png";
 import brendIcon3 from "../../Assets/images/Home/brendicon3.png";
