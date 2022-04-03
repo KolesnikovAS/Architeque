@@ -1,5 +1,5 @@
 import React from "react";
-import PageTitle from "../../Components/PageTitle/PageTitle";
+import PageTitle from "../../Containers/PageTitle/PageTitle";
 import styles from "./Services.module.scss"
 import reasonsBG from "../../Assets/images/Home/portfolioslide2.jpg"
 import Offer from "../../Components/offer/Offer";
@@ -13,7 +13,7 @@ const Services = () => {
 
             <section className={styles.reasons}>
                 <div className={styles.reasons_content}>
-                    <img src={reasonsBG} />
+                    <img src={reasonsBG} alt="building"/>
                     <div className={styles.reasons_value}>
                         <h1>The reasons</h1>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>

@@ -1,0 +1,16 @@
+.portfolio {
+    width: 100%;
+    background-color: white;
+    &_content {
+        padding: 155px 0 120px 0;
+        max-width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        img{
+            height: 415px;
+            margin-bottom: 35px;
+        }
+    }
+}

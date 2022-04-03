@@ -1,5 +1,5 @@
 import React from "react";
-import PageTitle from "../../Components/PageTitle/PageTitle";
+import PageTitle from "../../Containers/PageTitle/PageTitle";
 import styles from "./About.module.scss"
 import skillsImg from "../../Assets/images/About/skills.jpg"
 import valueIcon1 from "../../Assets/images/About/icon1.png"

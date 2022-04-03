@@ -10,7 +10,7 @@ const Banner = (props) => {
             <div className={styles.banner_content}>
                 <h4>Architeque</h4>
                 <p>We’re committed to delivering eye-catching architect designs</p>
-                <Button color={"white"} border={"2px solid white"}>Contact Us</Button>
+                <Button style={"white"} title={"Contact Us"} />
             </div>
         </section>
     )
