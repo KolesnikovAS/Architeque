@@ -2,22 +2,20 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import React from "react";
 import styles from "./Form.module.scss"
 import * as Yup from 'yup';
+import {Input, Textarea} from "./Input/Input";
 
 const ContactsForm = () => {
     const validate = Yup.object({
         name: Yup.string()
             .max(15, "Must be 15 characters or less")
-            .required("Required"),
+            .required("Name is Required"),
         email: Yup.string()
             .email("Email is invalid")
-            .required("Required"),
-        // phone: Yup.string()
-        //     .max(15, "Must be 15 characters or less")
-        //     .required("Required"),
+            .required("Email is Required")
     })
     return (
         <Formik
-            initialValues={{ name: '', email: '', phone: '', subject: '', message: '' }}
+            initialValues={{ name: '', email: '', phone: '', subject: '', message: '', surname: '' }}
             validationSchema={validate}
             onSubmit={(values, { setSubmitting }) => {
                 setTimeout(() => {
@@ -34,59 +32,54 @@ const ContactsForm = () => {
                 handleBlur,
                 handleSubmit,
                 isSubmitting,
-                /* and other goodies */
             }) => (
                 <form className={styles.feedback_form} onSubmit={handleSubmit}>
-                    <div className={styles.error}>{errors.name && touched.name && errors.name}</div>
-                    {console.log(values)}
-                    <input
-                        placeholder="YOUR NAME"
-                        type="text"
+                    <Input
+                        placeholder={"YOUR NAME"}
+                        type={"text"}
                         name="name"
-                        onChange={handleChange}
-                        onBlur={handleBlur}
+                        handleChange={handleChange}
+                        handleBlur={handleBlur}
                         value={values.name}
-                    />
-
-                    <input
-                        placeholder="YOUR EMAIL"
-                        type="email"
+                        errors={errors.name}
+                        touched={touched.name} />
+                    <Input
+                        placeholder={"YOUR EMAIL"}
+                        type={"text"}
                         name="email"
-                        onChange={handleChange}
-                        onBlur={handleBlur}
+                        handleChange={handleChange}
+                        handleBlur={handleBlur}
                         value={values.email}
-                    />
-                    {errors.email && touched.email && errors.email}
-                    <input
-                        placeholder="YOUR PHONE"
-                        type="tel"
+                        errors={errors.email}
+                        touched={touched.email} />
+                    <Input
+                        placeholder={"YOUR PHONE"}
+                        type={"tel"}
                         name="phone"
-                        onChange={handleChange}
-                        onBlur={handleBlur}
+                        handleChange={handleChange}
+                        handleBlur={handleBlur}
                         value={values.phone}
-                    />
-                    {errors.phone && touched.phone && errors.phone}
-                    <input
-                        placeholder="YOUR SUBJECT"
-                        type="text"
+                        errors={errors.phone}
+                        touched={touched.phone} />
+                    <Input
+                        placeholder={"YOUR SUBJECT"}
+                        type={"text"}
                         name="subject"
-                        onChange={handleChange}
-                        onBlur={handleBlur}
+                        handleChange={handleChange}
+                        handleBlur={handleBlur}
                         value={values.subject}
-                    />
-                    {errors.subject && touched.subject && errors.subject}
-                    <textarea
-                        placeholder="YOUR MESSAGE"
-                        type="text"
+                        errors={errors.subject}
+                        touched={touched.subject} />
+                    <Textarea
+                        placeholder={"YOUR SUBJECT"}
+                        type={"text"}
                         name="message"
-                        onChange={handleChange}
-                        onBlur={handleBlur}
+                        handleChange={handleChange}
+                        handleBlur={handleBlur}
                         value={values.message}
-                    />
-                    {errors.message && touched.message && errors.message}
-                    <button type="submit" disabled={isSubmitting}>
-                        Send
-                    </button>
+                        errors={errors.message}
+                        touched={touched.message} />
+                    <button type="submit" disabled={isSubmitting}>Send</button>
                 </form>
             )}
         </Formik>

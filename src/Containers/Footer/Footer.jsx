@@ -36,10 +36,10 @@ const Footer = () => {
                     <div className={styles.links}>
                         <h5>Explore Links</h5>
                         <ul>
-                            <li><NavLink to="/About">Contact Us</NavLink></li>
-                            <li><NavLink to="/Services">Pricing Table</NavLink></li>
-                            <li><NavLink to="/Teams">Terms &#38; Conditions</NavLink></li>
-                            <li><NavLink to="/Portfolio">Privacy policy</NavLink></li>
+                            <li><NavLink to="/Contacts">Contact Us</NavLink></li>
+                            <li><NavLink to="/Contacts">Pricing Table</NavLink></li>
+                            <li><NavLink to="/Contacts">Terms &#38; Conditions</NavLink></li>
+                            <li><NavLink to="/Contacts">Privacy policy</NavLink></li>
                         </ul>
                     </div>
                     <div className={styles.contacts}>
