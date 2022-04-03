@@ -34,7 +34,7 @@ const Teams = () => {
                     </div>
                 </div>
             </section>
-
+            
             <Banner />
             <PortfolioSlider />
 
