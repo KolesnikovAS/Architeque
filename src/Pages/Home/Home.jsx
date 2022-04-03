@@ -12,10 +12,7 @@ import brendIcon3 from "../../Assets/images/Home/brendicon3.png";
 import brendIcon4 from "../../Assets/images/Home/brendicon4.png";
 import advantagesImg from "../../Assets/images/Home/advantages.jpg"
 import doubleCheck from "../../Assets/images/Home/doublecheck.png"
-import portfolioImage1 from "../../Assets/images/Home/portfolioslide1.jpg";
-import portfolioImage2 from "../../Assets/images/Home/portfolioslide2.jpg";
-import portfolioImage3 from "../../Assets/images/Home/portfolioslide3.jpg";
-import portfolioImage4 from "../../Assets/images/Home/portfolioslide4.jpg";
+import PortfolioSlider from "../../Containers/PortfolioSlider/PortfolioSlider";
 
 const Home = () => {
     return (
@@ -101,13 +98,8 @@ const Home = () => {
             </section>
 
             <Banner />
+            <PortfolioSlider />
 
-            <section className={styles.portfolio}>
-                <img src={portfolioImage1} alt="building"/>
-                <img src={portfolioImage2} alt="building"/>
-                <img src={portfolioImage3} alt="building"/>
-                <img src={portfolioImage4} alt="building"/>
-            </section>
         </main>
     )
 }

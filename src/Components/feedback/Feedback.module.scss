@@ -1,0 +1,45 @@
+.feedback{
+    width: 610px;
+    margin: 0 auto;
+    .photo{
+        display: block;
+        margin: 0 auto;
+        width: 80px;
+        height: 80px;
+        border: 3px solid white;
+        border-radius: 50%;
+    }
+    .name{
+        margin-top: 19px;
+        text-align: center;
+        font-family: Poppins-Bold, sans-serif;
+        font-size: 16px;
+    }
+    .position{
+        text-align: center;
+        color: #c9c9c9;
+        font-family: Poppins-Medium, sans-serif;
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
+    .comment{
+        margin-top: 30px;
+        text-align: center;
+        color: #c9c9c9;
+        line-height: 24px;
+        font-family: Poppins-Medium, sans-serif;
+        font-size: 16px;
+    }
+    ul{
+        justify-content: center;
+        display: flex;
+        li{
+            img{
+                display: block;
+                margin-right: 10px;
+                height: 22px;
+                filter: invert(82%) sepia(53%) saturate(5235%) hue-rotate(3deg) brightness(110%) contrast(106%);
+            }
+        }
+    }
+}     

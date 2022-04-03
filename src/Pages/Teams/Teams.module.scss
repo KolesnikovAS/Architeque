@@ -1,0 +1,58 @@
+.teams {
+    width: 100%;
+    background-color: white;
+    &_content {
+        padding: 102px 0 62px 0;
+        max-width: 1140px;
+        margin: 0 auto;
+        h3 {
+            line-height: 64px;
+            font-family: Poppins-Bold, sans-serif;
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        .notes {
+            width: 500px;
+            color: #6c6c6c;
+            line-height: 24px;
+            font-family: Poppins-Medium, sans-serif;
+            font-size: 16px;
+        }
+        .stuff_container {
+            box-sizing: border-box;
+            height: 820px;
+            padding-top: 50px;
+            padding-right: 67px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-content: space-between
+        }
+    }
+}
+
+.feedback_slider {
+    background-color: white;
+    padding: 0 30px 30px 30px;
+    width: 100%;
+    &_content {
+        padding-top: 90px;
+        background-image: url(../../Assets/images/Home/servicesBG.jpg);
+        height: 499px;
+        h2 {
+            text-align: center;
+            line-height: 72px;
+            font-family: Poppins-Bold, sans-serif;
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .notes{
+            margin-bottom: 39px;
+            text-align: center;
+            color: #c9c9c9;
+            line-height: 24px;
+            font-family: Poppins-Medium, sans-serif;
+            font-size: 16px;
+        }
+    }
+}
