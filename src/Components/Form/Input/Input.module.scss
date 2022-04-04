@@ -8,13 +8,25 @@
         left: 0;
     }
     input{
+        caret-color: red;
         box-sizing: border-box;
         padding-left: 25px;
-        background-color: #f0f0f0;
+        color: #4F4F4F;
+    }
+    input.big{
         height: 52px;
         width: 318px;
-        color: #4F4F4F;
         margin-bottom: 19px;
+    }
+    input.light{
+        background-color: #f0f0f0;
+    }
+    input.small{
+        height: 39px;
+        width: 410px;
+    }
+    input.dark{
+        background-color: #090909;
     }
     textarea{
         resize: none;

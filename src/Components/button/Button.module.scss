@@ -1,14 +1,33 @@
 .button{
-    width: 162px;
-    height: 51px;
     font-family: Poppins-SemiBold, sans-serif;
     font-size: 16px;
 }
 .button.black{
-    background-color: black;
-    color: white;
+    border: 2px solid black;
+    color: black;
 }
 .button.white{
     border: 2px solid white;
     color: white;
+}
+.button.solid_black{
+    background-color: black;
+    color: white;
+}
+.button.solid_white{
+    background-color: white;
+    color: black;
+}
+.button.big{
+    width: 162px;
+    height: 51px;
+}
+.button.medium{
+    width: 142px;
+    height: 51px;
+}
+.button.small{
+    font-size: 12px;
+    width: 122px;
+    height: 39px;
 }

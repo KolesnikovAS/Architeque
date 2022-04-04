@@ -9,6 +9,8 @@ import inicon from "../../Assets/images/Footer/in.png"
 import instagram from "../../Assets/images/Footer/instagram.png"
 import twiter from "../../Assets/images/Footer/twiter.png"
 import ToTop from "../../Components/ToTop/ToTop";
+import Button from "../../Components/Button/Button";
+import { Input } from "../../Components/Form/Input/Input";
 
 const Footer = () => {
 
@@ -18,7 +20,18 @@ const Footer = () => {
             behavior: "smooth"
         });
     }
-
+    const socials = [{ icon: facebook, alt: "facebook" },
+    { icon: twiter, alt: "twiter" },
+    { icon: inicon, alt: "inicon" },
+    { icon: instagram, alt: "instagram" },];
+    const siteLinks = [{ path: "/About", value: "About Us" },
+    { path: "/Services", value: "Our Services" },
+    { path: "/Teams", value: "Our Team" },
+    { path: "/Portfolio", value: "Project Gallery" },]
+    const exploreLinks = [{ path: "/Contacts", value: "Contact Us" },
+    { path: "/Contacts", value: "Pricing Table" },
+    { path: "/Contacts", value: "Terms & Conditions" },
+    { path: "/Contacts", value: "Privacy policy" },]
     return (
         <footer>
             <ToTop toTop={toTop} />
@@ -28,28 +41,22 @@ const Footer = () => {
                         <h3>Architeque</h3>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                         <ul>
-                            <li className={styles.social_icon}><img src={facebook} alt="facebook" /></li>
-                            <li className={styles.social_icon}><img src={twiter} alt="twiter" /></li>
-                            <li className={styles.social_icon}><img src={inicon} alt="inIcon" /></li>
-                            <li className={styles.social_icon}><img src={instagram} alt="istagram" /></li>
+                            {socials.map((item, index) =>
+                                <li key={index} className={styles.social_icon}><img src={item.icon} alt={item.alt} /></li>)}
                         </ul>
                     </div>
                     <div className={styles.links}>
                         <h5>Site Links</h5>
                         <ul>
-                            <li><NavLink to="/About">About Us</NavLink></li>
-                            <li><NavLink to="/Services">Our Services</NavLink></li>
-                            <li><NavLink to="/Teams">Our Team</NavLink></li>
-                            <li><NavLink to="/Portfolio">Projects Gallery</NavLink></li>
+                            {siteLinks.map((link, index) =>
+                                <li key={index}><NavLink to={link.path}>{link.value}</NavLink></li>)}
                         </ul>
                     </div>
                     <div className={styles.links}>
                         <h5>Explore Links</h5>
                         <ul>
-                            <li><NavLink to="/Contacts">Contact Us</NavLink></li>
-                            <li><NavLink to="/Contacts">Pricing Table</NavLink></li>
-                            <li><NavLink to="/Contacts">Terms &#38; Conditions</NavLink></li>
-                            <li><NavLink to="/Contacts">Privacy policy</NavLink></li>
+                            {exploreLinks.map((link, index) =>
+                                <li key={index}><NavLink to={link.path}>{link.value}</NavLink></li>)}
                         </ul>
                     </div>
                     <div className={styles.contacts}>
@@ -64,8 +71,8 @@ const Footer = () => {
                 <div className={styles.bottom_container}>
                     <form>
                         <legend>Email Newsletter</legend>
-                        <input placeholder={"Enter your email to get newsletter"} />
-                        <button>Subscribe</button>
+                        <Input style={"dark"} size={"small"} placeholder={"Enter your email to get newsletter"} />
+                        <Button style={"solid_white"} size={"small"} title={"Subscibe"}/>
                     </form>
                     <p>© Copyright 2022 by Architeque - Services site part of JW-Construction .co .ltd</p>
                 </div>

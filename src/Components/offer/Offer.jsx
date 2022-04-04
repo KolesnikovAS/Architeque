@@ -8,7 +8,7 @@ const Offer = ({style, title, discription}) => {
         <div className={`${styles.offer} ${styles[style]}`}>
             <h3 className={styles.title}>{title}</h3>
             <p className={styles.discription}>{discription}</p>
-            <button className={styles[style]}><span>READ MORE</span><div></div></button>
+            <button className={styles[style]}>READ MORE</button>
         </div>
     )
 }

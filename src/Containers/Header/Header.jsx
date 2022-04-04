@@ -1,16 +1,22 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./Header.module.scss"
+import Button from "./../../Components/Button/Button"
 import mailIcon from "../../Assets/images/Header/mail.png"
 import phoneIcon from "../../Assets/images/Header/phone.png"
 
 const Header = () => {
+    const links = [{ path: "/", value: "Home" },
+                    { path: "/About", value: "About" },
+                    { path: "/Services", value: "Services" },
+                    { path: "/Portfolio", value: "Portfolio" },
+                    { path: "/Teams", value: "Teams" }]
     return (
         <header>
             <div className={styles.contacts_line}>
-                <img src={mailIcon} alt="mail"/>
+                <img src={mailIcon} alt="mail" />
                 <span>mail@yourcompany.com</span>
-                <img src={phoneIcon} alt="phone"/>
+                <img src={phoneIcon} alt="phone" />
                 <span>+896 120 5889 (Toll free)</span>
                 <span>Mon - Sat | 10am - 7pm</span>
             </div>
@@ -18,14 +24,12 @@ const Header = () => {
                 <h2>Architeque</h2>
                 <nav>
                     <ul>
-                        <li><NavLink className={({ isActive }) => `${isActive ? styles.active : ''}`} to="/">Home</NavLink></li>
-                        <li><NavLink className={({ isActive }) => `${isActive ? styles.active : ''}`} to="/About">About</NavLink></li>
-                        <li><NavLink className={({ isActive }) => `${isActive ? styles.active : ''}`} to="/Services">Services</NavLink></li>
-                        <li><NavLink className={({ isActive }) => `${isActive ? styles.active : ''}`} to="/Portfolio">Portfolio</NavLink></li>
-                        <li><NavLink className={({ isActive }) => `${isActive ? styles.active : ''}`} to="/Teams">Blog</NavLink></li>
+                        {links.map((link, index) => <li key={index}><NavLink
+                        className={({ isActive }) => `${isActive ? styles.active : ''}`} 
+                        to={link.path}>{link.value}</NavLink></li>)}
                     </ul>
                 </nav>
-                <button>Let's start</button>
+                <Button style={"black"} size={"medium"} title={"Let's start"} />
             </div>
         </header>
     )

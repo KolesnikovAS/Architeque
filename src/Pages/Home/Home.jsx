@@ -15,6 +15,10 @@ import doubleCheck from "../../Assets/images/Home/doublecheck.png"
 import PortfolioSlider from "../../Containers/PortfolioSlider/PortfolioSlider";
 
 const Home = () => {
+    const partners = [{ icon: brendIcon1, name: "LOGOIPSUM" },
+    { icon: brendIcon2, name: "logoipsum" },
+    { icon: brendIcon3, name: "logoipsum" },
+    { icon: brendIcon4, name: "LOGOIPSUM" }]
     return (
         <main>
             <section className={styles.slider}>
@@ -31,10 +35,8 @@ const Home = () => {
                 <div className={styles.promo}>
                     <video src="#" width="883px" height="419px" controls="controls" poster={videoPoster} />
                     <ul>
-                        <li><img src={brendIcon1} alt="brendicon" /><span>LOGOIPSUM</span></li>
-                        <li><img src={brendIcon2} alt="brendicon" /><span>logoipsum</span></li>
-                        <li><img src={brendIcon3} alt="brendicon" /><span>logoipsum</span></li>
-                        <li><img src={brendIcon4} alt="brendicon" /><span>LOGOIPSUM</span></li>
+                        {partners.map((partner, index) =>
+                            <li key={index}><img src={partner.icon} alt="brendicon" /><span>{partner.name}</span></li>)}
                     </ul>
                 </div>
                 <div className={styles.discription}>
@@ -65,18 +67,20 @@ const Home = () => {
                     <div className={styles.advantages_content_discription}>
                         <h2>Why us?</h2>
                         <table>
-                            <tr>
-                                <td><img src={doubleCheck} alt="doublecheck" /><span>Profesional works</span></td>
-                                <td><img src={doubleCheck} alt="doublecheck" /><span>Best value solutions</span></td>
-                            </tr>
-                            <tr>
-                                <td><img src={doubleCheck} alt="doublecheck" /><span>100% Guarantee</span></td>
-                                <td><img src={doubleCheck} alt="doublecheck" /><span>High professional teams</span></td>
-                            </tr>
-                            <tr>
-                                <td><img src={doubleCheck} alt="doublecheck" /><span>Profesional teams</span></td>
-                                <td><img src={doubleCheck} alt="doublecheck" /><span>Architecture licensed</span></td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td><img src={doubleCheck} alt="doublecheck" /><span>Profesional works</span></td>
+                                    <td><img src={doubleCheck} alt="doublecheck" /><span>Best value solutions</span></td>
+                                </tr>
+                                <tr>
+                                    <td><img src={doubleCheck} alt="doublecheck" /><span>100% Guarantee</span></td>
+                                    <td><img src={doubleCheck} alt="doublecheck" /><span>High professional teams</span></td>
+                                </tr>
+                                <tr>
+                                    <td><img src={doubleCheck} alt="doublecheck" /><span>Profesional teams</span></td>
+                                    <td><img src={doubleCheck} alt="doublecheck" /><span>Architecture licensed</span></td>
+                                </tr>
+                            </tbody>
                         </table>
                         <p>We’re committed to delivering eye-catching architect designs</p>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
