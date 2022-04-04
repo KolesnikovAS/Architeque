@@ -1,4 +1,4 @@
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik } from "formik";
 import React from "react";
 import styles from "./Form.module.scss"
 import * as Yup from 'yup';
@@ -17,10 +17,11 @@ const ContactsForm = () => {
         <Formik
             initialValues={{ name: '', email: '', phone: '', subject: '', message: '', surname: '' }}
             validationSchema={validate}
-            onSubmit={(values, { setSubmitting }) => {
+            onSubmit={(values, { setSubmitting, resetForm }) => {
                 setTimeout(() => {
                     alert(JSON.stringify(values, null, 2));
                     setSubmitting(false);
+                    resetForm();
                 }, 400);
             }}
         >

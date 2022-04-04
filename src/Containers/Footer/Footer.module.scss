@@ -2,6 +2,7 @@ footer{
     color: white;
     width: 100%;
     background-color: black;
+    position: relative;
     .footer_content{
         margin: 0 auto;
         padding: 112px 0 77px 0;
@@ -122,5 +123,23 @@ footer{
                 }
             }
         }
+    }
+}
+
+.to_top{
+    width: 42px;
+    height: 41px;
+    background-color: #414141;
+    position: absolute;
+    right: 40px;
+    bottom: 78px;
+    display: flex;
+    box-sizing: border-box;
+    padding-bottom: 16px;
+    .to_top_arrow{
+        margin: 0 auto;
+        border: 6px solid transparent;
+        border-bottom: 10px solid white;
+        box-sizing: border-box;
     }
 }

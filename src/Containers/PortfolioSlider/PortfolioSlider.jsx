@@ -5,14 +5,18 @@ import portfolioImage3 from "../../Assets/images/PortfolioSlider/portfolioslide3
 import portfolioImage4 from "../../Assets/images/PortfolioSlider/portfolioslide4.jpg";
 import styles from "./PortfolioSlider.module.scss"
 
+
+
+
 const PortfolioSlider = () => {
+
     return (
         <section className={styles.portfolio}>
             <img src={portfolioImage1} alt="building" />
             <img src={portfolioImage2} alt="building" />
             <img src={portfolioImage3} alt="building" />
             <img src={portfolioImage4} alt="building" />
-        </section>
+        </section >
     )
 }
 

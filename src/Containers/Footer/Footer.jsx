@@ -10,8 +10,19 @@ import instagram from "../../Assets/images/Footer/instagram.png"
 import twiter from "../../Assets/images/Footer/twiter.png"
 
 const Footer = () => {
+
+    const to_top = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
+
     return (
         <footer>
+            <div onClick={to_top} className={styles.to_top}>
+                <div className={styles.to_top_arrow}></div>
+            </div>
             <div className={styles.footer_content}>
                 <div className={styles.flex_container}>
                     <div className={styles.socials}>
@@ -54,7 +65,7 @@ const Footer = () => {
                 <div className={styles.bottom_container}>
                     <form>
                         <legend>Email Newsletter</legend>
-                        <input placeholder={"Enter your email to get newsletter"}/>
+                        <input placeholder={"Enter your email to get newsletter"} />
                         <button>Subscribe</button>
                     </form>
                     <p>© Copyright 2022 by Architeque - Services site part of JW-Construction .co .ltd</p>
