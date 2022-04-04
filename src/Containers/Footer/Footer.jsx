@@ -8,10 +8,11 @@ import facebook from "../../Assets/images/Footer/facebook.png"
 import inicon from "../../Assets/images/Footer/in.png"
 import instagram from "../../Assets/images/Footer/instagram.png"
 import twiter from "../../Assets/images/Footer/twiter.png"
+import ToTop from "../../Components/ToTop/ToTop";
 
 const Footer = () => {
 
-    const to_top = () => {
+    const toTop = () => {
         window.scrollTo({
             top: 0,
             behavior: "smooth"
@@ -20,9 +21,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <div onClick={to_top} className={styles.to_top}>
-                <div className={styles.to_top_arrow}></div>
-            </div>
+            <ToTop toTop={toTop} />
             <div className={styles.footer_content}>
                 <div className={styles.flex_container}>
                     <div className={styles.socials}>
