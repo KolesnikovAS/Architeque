@@ -30,6 +30,9 @@
         font-size: 14px; 
         display: flex;
         align-items: center;
+        span{
+            cursor: pointer;
+        }
         div{
             margin-left: 5px;
             box-sizing: border-box;
