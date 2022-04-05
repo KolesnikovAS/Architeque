@@ -3,19 +3,31 @@ import portfolioImage1 from "../../Assets/images/PortfolioSlider/portfolioslide1
 import portfolioImage2 from "../../Assets/images/PortfolioSlider/portfolioslide2.jpg";
 import portfolioImage3 from "../../Assets/images/PortfolioSlider/portfolioslide3.jpg";
 import portfolioImage4 from "../../Assets/images/PortfolioSlider/portfolioslide4.jpg";
-import styles from "./PortfolioSlider.module.scss"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import styles from "./PortfolioSlider.module.scss";
+import "./PortfolioSlider.css"
+
 
 
 
 
 const PortfolioSlider = () => {
-
+    const slides = [portfolioImage1, portfolioImage2, portfolioImage3, portfolioImage4, portfolioImage1,
+        portfolioImage2, portfolioImage3, portfolioImage4, portfolioImage1, portfolioImage2];
     return (
         <section className={styles.portfolio}>
-            <img src={portfolioImage1} alt="building" />
-            <img src={portfolioImage2} alt="building" />
-            <img src={portfolioImage3} alt="building" />
-            <img src={portfolioImage4} alt="building" />
+            <Swiper
+                modules={[Navigation]}
+                spaceBetween={50}
+                slidesPerView={4}
+                navigation
+            >
+                {slides.map((item,index) => 
+                <SwiperSlide key={index}><img src={item} alt="building" /></SwiperSlide>)}
+            </Swiper>
         </section >
     )
 }
