@@ -76,7 +76,7 @@ const About = () => {
             <section className={styles.puzzle}>
                 <div className={styles.puzzle_content}>
                     {puzzleItems.map((item, index) =>
-                        <PuzzleItem image={item.image} size={item.size} />)}
+                        <PuzzleItem key={index} image={item.image} size={item.size} />)}
                 </div>
             </section>
 

@@ -5,27 +5,34 @@ import reasonsBG from "../../Assets/images/PortfolioSlider/portfolioslide2.jpg"
 import Offer from "../../Components/Offer/Offer";
 import statisticsImage from "../../Assets/images/Home/advantages.jpg"
 import Button from "../../Components/Button/Button"
+import RoundValue from "../../Components/RoundValue/RoundValue";
 
 const Services = () => {
+    const values = [{value: "90%", title: "Clients Statisfied"},
+    {value: "95%", title: "Projects Success"},
+    {value: "85%", title: "Client Trust"},
+    {value: "95%", title: "Design Functiinality"}];
     return (
         <main>
             <PageTitle title={"Services"} />
 
             <section className={styles.reasons}>
                 <div className={styles.reasons_content}>
-                    <img src={reasonsBG} alt="building"/>
+                    <img src={reasonsBG} alt="building" />
                     <div className={styles.reasons_value}>
                         <h1>The reasons</h1>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                         <table>
-                            <tr>
-                                <td><h2>6385</h2><span>Project Success</span></td>
-                                <td><h2>589</h2><span>Win Awards</span></td>
-                            </tr>
-                            <tr>
-                                <td><h2>159</h2><span>Project Teams</span></td>
-                                <td><h2>1596</h2><span>Customer Happy</span></td>
-                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td><h2>6385</h2><span>Project Success</span></td>
+                                    <td><h2>589</h2><span>Win Awards</span></td>
+                                </tr>
+                                <tr>
+                                    <td><h2>159</h2><span>Project Teams</span></td>
+                                    <td><h2>1596</h2><span>Customer Happy</span></td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -47,16 +54,10 @@ const Services = () => {
                 <div className={styles.statistics_content}>
                     <div className={styles.statistics_discription}>
                         <h2>Services statistics</h2>
-                        <table>
-                            <tr>
-                                <td><span>90%</span><p>Clients Statisfied</p></td>
-                                <td><span>95%</span><p>Projects Success</p></td>
-                            </tr>
-                            <tr>
-                                <td><span>85%</span><p>Client Trust</p></td>
-                                <td><span>95%</span><p>Design Functiinality</p></td>
-                            </tr>
-                        </table>
+                        <div className={styles.statistics_container}>
+                            {values.map((item, index) => 
+                                <RoundValue key={index} style={"light"} value={item.value} title={item.title} />)}
+                        </div>
                         <p className={styles.notes}>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     </div>
                     <img className={styles.statstics_image} src={statisticsImage} alt="design" />
@@ -67,7 +68,7 @@ const Services = () => {
                 <div className={styles.order_content}>
                     <h1>Get service now</h1>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
-                    <Button style={"white"} title={"Contact Us"}/>
+                    <Button style={"white"} title={"Contact Us"} />
                 </div>
             </section>
 

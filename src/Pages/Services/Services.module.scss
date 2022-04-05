@@ -107,6 +107,16 @@
                 font-family: Poppins-Bold, sans-serif;
                 font-size: 48px;
             }
+            .statistics_container {
+                width: 100%;
+                height: 240px;
+                align-content: space-between;
+
+                display: flex;
+                flex-wrap: wrap;
+                margin: 50px 0 45px 0;
+                padding-left: 20px;
+            }
             .notes {
                 padding-left: 20px;
                 width: 100%;
@@ -114,42 +124,6 @@
                 line-height: 22px;
                 font-family: Poppins-Medium, sans-serif;
                 font-size: 14px;
-            }
-            table {
-                margin: 32px 0 45px 0;
-                tr {
-                    td:last-child{
-                        padding-left: 14px;
-                    }
-                    td {
-                        padding-left: 18px;
-                        padding-top: 17px;
-                        width: 50%;
-                        span {
-                            display: inline-block;
-                            margin-right: 14px;
-                            box-sizing: border-box;
-                            font-family: Poppins-Bold, sans-serif;
-                            font-size: 24px;
-                            text-align: center;
-                            line-height: 102px;
-                            height: 110px;
-                            width: 110px;
-                            border-radius: 50%;
-                            border: 7px solid #d3d3d3;
-                        }
-                        p {
-                            margin-top: 30px;
-                            height: 50px;
-                            vertical-align: top;
-                            display: inline-block;
-                            line-height: 27px;
-                            font-family: Poppins-Medium, sans-serif;
-                            font-size: 18px;
-                            width: 100px;                     
-                        }
-                    }
-                }
             }
         }
         .statstics_image {
@@ -160,27 +134,26 @@
     }
 }
 
-
-.order{
+.order {
     background-image: url(../../Assets/images/Home/achivmentsBG.jpg);
     background-size: cover;
     height: 527px;
     position: relative;
     color: white;
-    &_content{
+    &_content {
         padding-top: 150px;
         margin: 0 auto;
         max-width: 1140px;
         position: relative;
         z-index: 2;
-        h1{
+        h1 {
             text-align: center;
             color: white;
             line-height: 96px;
             font-family: Poppins-Bold, sans-serif;
             font-size: 64px;
         }
-        p{
+        p {
             text-align: center;
             margin: 0 auto;
             color: white;
@@ -189,12 +162,12 @@
             font-family: Poppins-Medium, sans-serif;
             font-size: 16px;
         }
-        button{
+        button {
             margin: 29px auto;
         }
     }
 }
-.order:after{
+.order:after {
     z-index: 1;
     content: "";
     position: absolute;

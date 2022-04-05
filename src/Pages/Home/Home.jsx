@@ -13,6 +13,7 @@ import brendIcon4 from "../../Assets/images/Home/brendicon4.png";
 import advantagesImg from "../../Assets/images/Home/advantages.jpg"
 import doubleCheck from "../../Assets/images/Home/doublecheck.png"
 import PortfolioSlider from "../../Containers/PortfolioSlider/PortfolioSlider";
+import RoundValue from "../../Components/RoundValue/RoundValue";
 
 const Home = () => {
     const partners = [{ icon: brendIcon1, name: "LOGOIPSUM" },
@@ -57,8 +58,8 @@ const Home = () => {
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
                         <Button style={"white"} title={"Learn more"} />
                     </div>
-                    <div className={styles.achievments_numbers}><span>90%</span><p>Clients statisfied</p></div>
-                    <div className={styles.achievments_numbers}><span>95%</span><p>Projects success</p></div>
+                    <RoundValue style={"dark"} value={"90%"} title={"Clients statisfied"} />
+                    <RoundValue style={"dark"} value={"95%"} title={"Projects success"} />
                 </div>
             </section>
 

@@ -127,24 +127,6 @@
         .achievments_numbers{
             display: flex;
             align-items: center;
-            span{
-                margin-right: 14px;
-                box-sizing: border-box;
-                font-family: Poppins-Bold, sans-serif;
-                font-size: 24px;
-                text-align: center;
-                line-height: 103px;
-                height: 110px;
-                width: 110px;
-                border-radius: 50%;
-                border: 7px solid #353535;
-            }
-            p{
-                line-height: 27px;
-                font-family: Poppins-Medium, sans-serif;
-                font-size: 18px;
-                width: 100px;
-            }
         }
     }
 }
