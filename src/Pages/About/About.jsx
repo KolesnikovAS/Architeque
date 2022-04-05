@@ -16,6 +16,10 @@ import Post from "../../Components/Post/Post";
 import PostImage1 from "../../Assets/images/Post/post1.jpg"
 import PostImage2 from "../../Assets/images/Post/post2.jpg"
 import Result from "../../Components/Result/Result";
+import puzzleImage1 from "../../Assets/images/PuzzleItem/puzzle1.jpg"
+import puzzleImage2 from "../../Assets/images/PuzzleItem/puzzle2.jpg"
+import puzzleImage3 from "../../Assets/images/PuzzleItem/puzzle3.jpg"
+import PuzzleItem from "../../Components/PuzzleItem/PuzzleItem";
 
 
 const About = () => {
@@ -30,6 +34,9 @@ const About = () => {
                     {title: "Concept", value: "80%"},
                     {title: "Deadline", value: "95%"},
                     {title: "Result", value: "85%"}]
+    const puzzleItems = [{image: puzzleImage1, size: "48%"},
+                        {image: puzzleImage2, size: "48%"},
+                        {image: puzzleImage3, size: "100%"}]
     return (
         <main>
             <PageTitle title={"About"} />
@@ -42,7 +49,7 @@ const About = () => {
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
                         <ul>
                             {results.map((item, index) =>
-                                <Result title={item.title} value={item.value} />)}
+                                <Result key={index} title={item.title} value={item.value} />)}
                         </ul>
                     </div>
                 </div>
@@ -68,15 +75,8 @@ const About = () => {
 
             <section className={styles.puzzle}>
                 <div className={styles.puzzle_content}>
-                    <div className={styles.puzzle_item}>
-                        <Button style={"white"} title={"View Services"} />
-                    </div>
-                    <div className={styles.puzzle_item}>
-                        <Button style={"white"} title={"View Teams"} />
-                    </div>
-                    <div className={styles.puzzle_line}>
-                        <Button style={"white"} title={"View Portfolio"} />
-                    </div>
+                    {puzzleItems.map((item, index) =>
+                        <PuzzleItem image={item.image} size={item.size} />)}
                 </div>
             </section>
 
