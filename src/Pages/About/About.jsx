@@ -1,7 +1,7 @@
 import React from "react";
 import PageTitle from "../../Containers/PageTitle/PageTitle";
 import styles from "./About.module.scss"
-import skillsImg from "../../Assets/images/About/skills.jpg"
+import skillsImage from "../../Assets/images/About/skills.jpg"
 import valueIcon1 from "../../Assets/images/About/icon1.png"
 import valueIcon2 from "../../Assets/images/About/icon2.png"
 import valueIcon3 from "../../Assets/images/About/icon3.png"
@@ -23,41 +23,39 @@ import PuzzleItem from "../../Components/PuzzleItem/PuzzleItem";
 
 
 const About = () => {
-    const values = [{icon: valueIcon1, number: "6385", title: "Project Success"},
-                    {icon: valueIcon2, number: "159", title: "Project Teams"},
-                    {icon: valueIcon3, number: "589", title: "Win Awards"},
-                    {icon: valueIcon4, number: "1596", title: "Customer Happy"}];
-    const stuff = [{photo: stuffPhoto1, name: "Sarah Doe", position: "Interior Designer"},
-                    {photo: stuffPhoto2, name: "John Doe", position: "Architect Building"},
-                    {photo: stuffPhoto3, name: "Smith Doe", position: "Architect Landscape"}];
-    const results = [{title: "Design", value: "90%"},
-                    {title: "Concept", value: "80%"},
-                    {title: "Deadline", value: "95%"},
-                    {title: "Result", value: "85%"}]
-    const puzzleItems = [{image: puzzleImage1, size: "48%"},
-                        {image: puzzleImage2, size: "48%"},
-                        {image: puzzleImage3, size: "100%"}]
+    const values = [{ icon: valueIcon1, number: "6385", title: "Project Success" },
+    { icon: valueIcon2, number: "159", title: "Project Teams" },
+    { icon: valueIcon3, number: "589", title: "Win Awards" },
+    { icon: valueIcon4, number: "1596", title: "Customer Happy" }];
+    const stuff = [{ photo: stuffPhoto1, name: "Sarah Doe", position: "Interior Designer" },
+    { photo: stuffPhoto2, name: "John Doe", position: "Architect Building" },
+    { photo: stuffPhoto3, name: "Smith Doe", position: "Architect Landscape" }];
+    const results = [{ title: "Design", value: "90" },
+    { title: "Concept", value: "80" },
+    { title: "Deadline", value: "95" },
+    { title: "Result", value: "85" }]
+    const puzzleItems = [{ image: puzzleImage1, size: "48%" },
+    { image: puzzleImage2, size: "48%" },
+    { image: puzzleImage3, size: "100%" }]
     return (
         <main>
             <PageTitle title={"About"} />
 
             <section className={styles.skills}>
                 <div className={styles.skills_content}>
-                    <img src={skillsImg} alt="building" />
+                    <img src={skillsImage} alt="building" />
                     <div className={styles.skills_discription}>
                         <h2>Company skills</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
-                        <ul>
-                            {results.map((item, index) =>
-                                <Result key={index} title={item.title} value={item.value} />)}
-                        </ul>
+                        {results.map((item, index) =>
+                            <Result key={index} title={item.title} value={item.value} />)}
                     </div>
                 </div>
             </section>
 
             <section className={styles.values}>
                 <div className={styles.values_content}>
-                    {values.map((value, index) => 
+                    {values.map((value, index) =>
                         <Value key={index} icon={value.icon} number={value.number} title={value.title} />)}
                 </div>
             </section>

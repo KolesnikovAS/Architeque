@@ -10,7 +10,7 @@ import instagram from "../../Assets/images/Footer/instagram.png"
 import twiter from "../../Assets/images/Footer/twiter.png"
 import ToTop from "../../Components/ToTop/ToTop";
 import Button from "../../Components/Button/Button";
-import { Input } from "../../Components/Form/Input/Input";
+import Input from "../../Components/Input/Input";
 
 const Footer = () => {
 

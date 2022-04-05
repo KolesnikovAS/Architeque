@@ -6,6 +6,10 @@
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
+        img{
+            width: 495px;
+            height: 530px;
+        }
         .skills_discription{
             padding-top: 10px;
             width: 500px;
@@ -102,7 +106,7 @@
     width: 100%;
     background-color: white;
     &_content{
-        padding: 125px 0 128px 0;
+        padding: 73px 0 128px 0;
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
@@ -115,7 +119,7 @@
             width: 50%;
             padding-top: 10px;
             h2{
-                font-size: 56px;
+                font-size: 48px;
                 font-family: Poppins-Bold, sans-serif;
                 line-height: 96px;
             }
