@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Result.module.scss"
+import styles from "./Progress.module.scss"
 
-const Result = ({ title, value }) => {
+const Progress = ({ title, value }) => {
     return (
         <div className={styles.result}>
             <div><span>{title}</span><b>{`${value}%`}</b></div>
@@ -10,4 +10,4 @@ const Result = ({ title, value }) => {
     )
 }
 
-export default Result;
+export default Progress;

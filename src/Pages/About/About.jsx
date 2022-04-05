@@ -15,7 +15,7 @@ import Button from "../../Components/Button/Button";
 import Post from "../../Components/Post/Post";
 import PostImage1 from "../../Assets/images/Post/post1.jpg"
 import PostImage2 from "../../Assets/images/Post/post2.jpg"
-import Result from "../../Components/Result/Result";
+import Progress from "../../Components/Progress/Progress";
 import puzzleImage1 from "../../Assets/images/PuzzleItem/puzzle1.jpg"
 import puzzleImage2 from "../../Assets/images/PuzzleItem/puzzle2.jpg"
 import puzzleImage3 from "../../Assets/images/PuzzleItem/puzzle3.jpg"
@@ -48,7 +48,7 @@ const About = () => {
                         <h2>Company skills</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
                         {results.map((item, index) =>
-                            <Result key={index} title={item.title} value={item.value} />)}
+                            <Progress key={index} title={item.title} value={item.value} />)}
                     </div>
                 </div>
             </section>
