@@ -15,9 +15,21 @@ import Button from "../../Components/Button/Button";
 import Post from "../../Components/Post/Post";
 import PostImage1 from "../../Assets/images/Post/post1.jpg"
 import PostImage2 from "../../Assets/images/Post/post2.jpg"
+import Result from "../../Components/Result/Result";
 
 
 const About = () => {
+    const values = [{icon: valueIcon1, number: "6385", title: "Project Success"},
+                    {icon: valueIcon2, number: "159", title: "Project Teams"},
+                    {icon: valueIcon3, number: "589", title: "Win Awards"},
+                    {icon: valueIcon4, number: "1596", title: "Customer Happy"}];
+    const stuff = [{photo: stuffPhoto1, name: "Sarah Doe", position: "Interior Designer"},
+                    {photo: stuffPhoto2, name: "John Doe", position: "Architect Building"},
+                    {photo: stuffPhoto3, name: "Smith Doe", position: "Architect Landscape"}];
+    const results = [{title: "Design", value: "90%"},
+                    {title: "Concept", value: "80%"},
+                    {title: "Deadline", value: "95%"},
+                    {title: "Result", value: "85%"}]
     return (
         <main>
             <PageTitle title={"About"} />
@@ -28,24 +40,18 @@ const About = () => {
                     <div className={styles.skills_discription}>
                         <h2>Company skills</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
-                        <h5><span>Design</span><b>90%</b></h5>
-                        <div className={styles.design_value}></div>
-                        <h5><span>Concept</span><b>80%</b></h5>
-                        <div className={styles.concept_value}></div>
-                        <h5><span>Deadline</span><b>95%</b></h5>
-                        <div className={styles.deadline_value}></div>
-                        <h5><span>Result</span><b>85%</b></h5>
-                        <div className={styles.result_value}></div>
+                        <ul>
+                            {results.map((item, index) =>
+                                <Result title={item.title} value={item.value} />)}
+                        </ul>
                     </div>
                 </div>
             </section>
 
             <section className={styles.values}>
                 <div className={styles.values_content}>
-                    <Value icon={valueIcon1} number={"6385"} title={"Project Success"} />
-                    <Value icon={valueIcon2} number={"159"} title={"Project Teams"} />
-                    <Value icon={valueIcon3} number={"589"} title={"Win Awards"} />
-                    <Value icon={valueIcon4} number={"1596"} title={"Customer Happy"} />
+                    {values.map((value, index) => 
+                        <Value key={index} icon={value.icon} number={value.number} title={value.title} />)}
                 </div>
             </section>
 
@@ -54,9 +60,8 @@ const About = () => {
                     <h1>Experts Teams</h1>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
                     <ul>
-                        <li><Stuff photo={stuffPhoto1} name={"Sarah Doe"} position={"Interior Designer"} /></li>
-                        <li><Stuff photo={stuffPhoto2} name={"John Doe"} position={"Architect Building"} /></li>
-                        <li><Stuff photo={stuffPhoto3} name={"Smith Doe"} position={"Architect landscape"} /></li>
+                        {stuff.map((item, index) =>
+                            <li key={index}><Stuff photo={item.photo} name={item.name} position={item.position} /></li>)}
                     </ul>
                 </div>
             </section>
@@ -80,7 +85,7 @@ const About = () => {
                     <div className={styles.blog_discription}>
                         <h2>From the blog</h2>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
-                        <Button backgroundColor={"black"} color={"white"}>Learn More</Button>
+                        <Button style={"solid_black"} size={"big"} title="Learn More" />
                     </div>
                     <div className={styles.blog_posts}>
                         <Post image={PostImage1} title={"Lorem ipsum dolor sit"} discription={"Reader will be distracted by the readable content"} />
