@@ -14,21 +14,15 @@ import portfolioImage9 from "../../Assets/images/Portfolio/9.jpg"
 
 
 const Portfolio = () => {
+    const images = [portfolioImage1, portfolioImage2, portfolioImage3, portfolioImage4, portfolioImage5,
+        portfolioImage6, portfolioImage7, portfolioImage8, portfolioImage9]
     return (
         <main>
             <PageTitle title={"Portfolio"} />
 
             <section className={styles.portfolio}>
                 <div className={styles.portfolio_content}>
-                    <img src={portfolioImage1} alt="building" />
-                    <img src={portfolioImage2} alt="building" />
-                    <img src={portfolioImage3} alt="building" />
-                    <img src={portfolioImage4} alt="building" />
-                    <img src={portfolioImage5} alt="building" />
-                    <img src={portfolioImage6} alt="building" />
-                    <img src={portfolioImage7} alt="building" />
-                    <img src={portfolioImage8} alt="building" />
-                    <img src={portfolioImage9} alt="building" />
+                    {images.map((item, index) => <img key={index} src={item} alt="building" />)}
                 </div>
             </section>
 

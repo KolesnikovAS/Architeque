@@ -16,6 +16,12 @@ import feedbackPhoto1 from "../../Assets/images/Feedback/4.jpg"
 
 
 const Teams = () => {
+    const stuff = [{photo: stuffPhoto1, name: "Sarah Doe", position: "Interior Designer"},
+    {photo: stuffPhoto2, name: "John Doe", position: "Architect Building"},
+    {photo: stuffPhoto3, name: "Smith Doe", position: "Architect Landscape"},
+    {photo: stuffPhoto4, name: "Keylin Doe", position: "Project Manager"},
+    {photo: stuffPhoto5, name: "Megan Doe", position: "Finace"},
+    {photo: stuffPhoto6, name: "Sanchez Doe", position: "Legal"}];
     return (
         <main>
             <PageTitle title={"Teams"} />
@@ -25,12 +31,8 @@ const Teams = () => {
                     <h3>Meet our teams</h3>
                     <p className={styles.notes}>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
                     <div className={styles.stuff_container}>
-                        <Stuff photo={stuffPhoto1} name={"Sarah Doe"} position={"Interior Designer"} />
-                        <Stuff photo={stuffPhoto2} name={"John Doe"} position={"Architect Building"} />
-                        <Stuff photo={stuffPhoto3} name={"Smith Doe"} position={"Architect landscape"} />
-                        <Stuff photo={stuffPhoto4} name={"Keylin Doe"} position={"Project Manager"} />
-                        <Stuff photo={stuffPhoto5} name={"Megan Doe"} position={"Finace"} />
-                        <Stuff photo={stuffPhoto6} name={"Sanchez Doe"} position={"Legal"} />
+                        {stuff.map((item, index) =>
+                            <Stuff key={index} photo={item.photo} name={item.name} position={item.position} />)}
                     </div>
                 </div>
             </section>
