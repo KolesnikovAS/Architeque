@@ -5,11 +5,11 @@ import reasonsBG from "../../Assets/images/PortfolioSlider/portfolioslide2.jpg"
 import Offer from "../../Components/Offer/Offer";
 import statisticsImage from "../../Assets/images/Home/advantages.jpg"
 import Button from "../../Components/Button/Button"
-import RoundValue from "../../Components/RoundValue/RoundValue";
+import RoundProgress from "../../Components/RoundProgress/RoundProgress";
 
 const Services = () => {
     const values = [{value: "90%", title: "Clients Statisfied"},
-    {value: "95%", title: "Projects Success"},
+    {value: "90%", title: "Projects Success"},
     {value: "85%", title: "Client Trust"},
     {value: "95%", title: "Design Functiinality"}];
     return (
@@ -56,7 +56,7 @@ const Services = () => {
                         <h2>Services statistics</h2>
                         <div className={styles.statistics_container}>
                             {values.map((item, index) => 
-                                <RoundValue key={index} style={"light"} value={item.value} title={item.title} />)}
+                                <RoundProgress key={index} style={"light"} value={item.value} title={item.title} />)}
                         </div>
                         <p className={styles.notes}>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     </div>

@@ -2,12 +2,12 @@ import React from "react";
 import styles from "./Value.module.scss"
 
 
-const Value = (props) => {
+const Value = ({icon, number, title}) => {
     return (
         <div className={styles.value}>
-            <img src={props.icon} alt="icon" />
-            <h2>{props.number}</h2>
-            <p>{props.title}</p>
+            <img src={icon} alt="icon" />
+            <h2>{number}</h2>
+            <p>{title}</p>
         </div>
     )
 }

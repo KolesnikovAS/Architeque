@@ -8,33 +8,27 @@ import facebook from "../../Assets/images/Footer/facebook.png"
 import inicon from "../../Assets/images/Footer/in.png"
 import instagram from "../../Assets/images/Footer/instagram.png"
 import twiter from "../../Assets/images/Footer/twiter.png"
-import ToTop from "../../Components/ToTop/ToTop";
+import ToTopButton from "../../Components/ToTopButton/ToTopButton";
 import Button from "../../Components/Button/Button";
 import Input from "../../Components/Input/Input";
 
 const Footer = () => {
 
-    const toTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    }
     const socials = [{ icon: facebook, alt: "facebook" },
-    { icon: twiter, alt: "twiter" },
-    { icon: inicon, alt: "inicon" },
-    { icon: instagram, alt: "instagram" },];
+                    { icon: twiter, alt: "twiter" },
+                    { icon: inicon, alt: "inicon" },
+                    { icon: instagram, alt: "instagram" },];
     const siteLinks = [{ path: "/About", value: "About Us" },
-    { path: "/Services", value: "Our Services" },
-    { path: "/Teams", value: "Our Team" },
-    { path: "/Portfolio", value: "Project Gallery" },]
+                    { path: "/Services", value: "Our Services" },
+                    { path: "/Teams", value: "Our Team" },
+                    { path: "/Portfolio", value: "Project Gallery" },]
     const exploreLinks = [{ path: "/Contacts", value: "Contact Us" },
-    { path: "/Contacts", value: "Pricing Table" },
-    { path: "/Contacts", value: "Terms & Conditions" },
-    { path: "/Contacts", value: "Privacy policy" },]
+                    { path: "/Contacts", value: "Pricing Table" },
+                    { path: "/Contacts", value: "Terms & Conditions" },
+                    { path: "/Contacts", value: "Privacy policy" },]
     return (
         <footer>
-            <ToTop toTop={toTop} />
+            <ToTopButton />
             <div className={styles.footer_content}>
                 <div className={styles.flex_container}>
                     <div className={styles.socials}>
@@ -72,7 +66,7 @@ const Footer = () => {
                     <form>
                         <legend>Email Newsletter</legend>
                         <Input style={"dark"} size={"small"} placeholder={"Enter your email to get newsletter"} />
-                        <Button style={"solid_white"} size={"small"} title={"Subscibe"}/>
+                        <Button style={"solid_white"} size={"small"} title={"Subscibe"} />
                     </form>
                     <p>© Copyright 2022 by Architeque - Services site part of JW-Construction .co .ltd</p>
                 </div>

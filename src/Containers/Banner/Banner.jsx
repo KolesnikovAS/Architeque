@@ -3,7 +3,7 @@ import Button from "../../Components/Button/Button";
 import styles from "./Banner.module.scss"
 import bgimage from "../../Assets/images/Banner/banner.png"
 
-const Banner = (props) => {
+const Banner = () => {
     return (
         <section className={styles.banner}>
             <img src={bgimage} className={styles.banner_image} alt="lines"/>

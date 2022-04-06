@@ -18,6 +18,9 @@
         width: 318px;
         margin-bottom: 19px;
     }
+    input.big::placeholder{
+        letter-spacing: 5px;
+    }
     input.light{
         background-color: #f0f0f0;
     }
@@ -38,6 +41,9 @@
         height: 230px;
         width: 100%;
         color: #4F4F4F;
+    }
+    textarea::placeholder{
+        letter-spacing: 5px;
     }
     input.invalid, textarea.invalid{
         border: 1px solid red;

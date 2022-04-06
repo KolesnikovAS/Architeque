@@ -97,7 +97,7 @@ const Contacts = () => {
                                     errors={errors.subject}
                                     touched={touched.subject} />
                                 <Textarea
-                                    placeholder={"YOUR SUBJECT"}
+                                    placeholder={"YOUR MESSAGE"}
                                     type={"text"}
                                     name="message"
                                     handleChange={handleChange}

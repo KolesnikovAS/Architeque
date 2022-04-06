@@ -6,8 +6,8 @@ const Offer = ({style, title, discription}) => {
 
     return (
         <div className={`${styles.offer} ${styles[style]}`}>
-            <h3 className={styles.title}>{title}</h3>
-            <p className={styles.discription}>{discription}</p>
+            <h3>{title}</h3>
+            <p>{discription}</p>
             <button className={styles[style]}>READ MORE</button>
         </div>
     )

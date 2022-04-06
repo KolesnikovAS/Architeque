@@ -2,13 +2,13 @@ import React from "react";
 import styles from "./Post.module.scss"
 
 
-const Post = (props) => {
+const Post = ({image, title, discription}) => {
     return (
         <div className={styles.post}>
-            <img className={styles.image} src={props.image}/>
-            <h5 className={styles.title}>{props.title}</h5>
-            <p className={styles.discription}>{props.discription}</p>
-            <button><span>read more</span><div></div></button>
+            <img src={image} alt="design"/>
+            <h5>{title}</h5>
+            <p>{discription}</p>
+            <button>read more</button>
         </div>
     )
 }

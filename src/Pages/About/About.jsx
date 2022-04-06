@@ -34,9 +34,9 @@ const About = () => {
     { title: "Concept", value: "80" },
     { title: "Deadline", value: "95" },
     { title: "Result", value: "85" }]
-    const puzzleItems = [{ image: puzzleImage1, size: "48%" },
-    { image: puzzleImage2, size: "48%" },
-    { image: puzzleImage3, size: "100%" }]
+    const puzzleItems = [{ image: puzzleImage1, size: "48%", title: "View services" },
+    { image: puzzleImage2, size: "48%", title: "View teams" },
+    { image: puzzleImage3, size: "100%", title: "View portfolio" }]
     return (
         <main>
             <PageTitle title={"About"} />
@@ -74,7 +74,7 @@ const About = () => {
             <section className={styles.puzzle}>
                 <div className={styles.puzzle_content}>
                     {puzzleItems.map((item, index) =>
-                        <PuzzleItem key={index} image={item.image} size={item.size} />)}
+                        <PuzzleItem key={index} image={item.image} size={item.size} title={item.title} />)}
                 </div>
             </section>
 

@@ -1,0 +1,43 @@
+.round_progress {
+    margin-right: 13px;
+    display: flex;
+    align-items: center;
+    span{
+        position: absolute;
+        font-family: Poppins-Bold, sans-serif;
+        font-size: 24px;
+        margin-left: 33px;
+    }
+    p {
+        margin-left: 14px;
+        line-height: 27px;
+        font-family: Poppins-Medium, sans-serif;
+        font-size: 18px;
+        width: 100px;
+    }
+    svg {
+        transform: rotate(-90deg);
+        position: relative;
+        height: 110px;
+        width: 110px;
+        circle{
+            stroke: black;
+            fill: none;
+            stroke-width: 6px;
+            stroke-linejoin: round;
+        }
+    }
+    svg.dark{
+        circle{
+            stroke: #777777;
+        }
+        circle:last-child{
+            stroke: #353535;
+        }
+    }
+    svg.light{
+        circle:last-child{
+            stroke: #d3d3d3;
+        }
+    }
+}
