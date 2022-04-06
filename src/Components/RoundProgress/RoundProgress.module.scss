@@ -21,23 +21,25 @@
         height: 110px;
         width: 110px;
         circle{
-            stroke: black;
+            stroke: #d3d3d3;
             fill: none;
             stroke-width: 6px;
-            stroke-linejoin: round;
+            stroke-linecap: round;
         }
     }
     svg.dark{
         circle{
-            stroke: #777777;
+            stroke: #353535;
         }
         circle:last-child{
-            stroke: #353535;
+            stroke-width: 7px;
+            stroke: #777777;
         }
     }
     svg.light{
         circle:last-child{
-            stroke: #d3d3d3;
+            stroke: black;
+            stroke-width: 7px;
         }
     }
 }

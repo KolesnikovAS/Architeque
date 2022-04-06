@@ -8,10 +8,11 @@
     display: flex;
     box-sizing: border-box;
     padding-top: 8px;
-    .to_top_arrow {
-        margin: 0 auto;
-        border: 6px solid transparent;
-        border-bottom: 10px solid white;
-        box-sizing: border-box;
-    }
+}
+.to_top::after{
+    margin: 0 auto;
+    display: block;
+    content: "";
+    border: 6px solid transparent;
+    border-bottom: 10px solid white;
 }

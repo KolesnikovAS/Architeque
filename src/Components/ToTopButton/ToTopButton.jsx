@@ -10,9 +10,7 @@ const ToTopButton = () => {
         });
     }
     return (
-        <button onClick={toTop} className={styles.to_top}>
-            <div className={styles.to_top_arrow}></div>
-        </button>
+        <button onClick={toTop} className={styles.to_top}></button>
     )
 }
 
