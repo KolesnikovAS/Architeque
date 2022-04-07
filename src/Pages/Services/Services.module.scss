@@ -13,7 +13,7 @@
         }
         .reasons_value {
             box-sizing: border-box;
-            padding: 64px 75px 67px 81px;
+            padding: 64px 80px 48px 81px;
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
             position: absolute;
             left: 50%;
@@ -32,31 +32,36 @@
                 font-family: Poppins-Medium, sans-serif;
                 font-size: 16px;
             }
-            table {
-                padding-top: 46px;
+            ul:after{
+                content: "";
+                display: block;
+                background-color: black;
+                position: absolute;
+                left: 190px;
+                top: 0;
+                width: 2px;
+                height: calc(100% - 22px);
+            }
+            ul {
+                position: relative;
+                margin-top: 46px;
                 width: 100%;
-                tr:first-child {
-                    height: 81px;
-                }
-                tr {
-                    td:last-child {
-                        border-left: 1px solid black;
-                        padding-left: 49px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                li {
+                    margin-bottom: 22px;
+                    width: 150px;
+                    h2 {
+                        line-height: 36px;
+                        font-family: Poppins-Bold, sans-serif;
+                        font-size: 36px;
                     }
-                    td {
-                        vertical-align: top;
-                        width: 50%;
-                        h2 {
-                            line-height: 36px;
-                            font-family: Poppins-Bold, sans-serif;
-                            font-size: 36px;
-                        }
-                        span {
-                            color: #757575;
-                            line-height: 24px;
-                            font-family: Poppins-Medium, sans-serif;
-                            font-size: 14px;
-                        }
+                    span {
+                        color: #757575;
+                        line-height: 24px;
+                        font-family: Poppins-Medium, sans-serif;
+                        font-size: 14px;
                     }
                 }
             }

@@ -1,5 +1,4 @@
 import React from "react";
-import PageTitle from "../../Containers/PageTitle/PageTitle";
 import styles from "./Services.module.scss"
 import reasonsBG from "../../Assets/images/PortfolioSlider/portfolioslide2.jpg"
 import Offer from "../../Components/Offer/Offer";
@@ -8,13 +7,17 @@ import Button from "../../Components/Button/Button"
 import RoundProgress from "../../Components/RoundProgress/RoundProgress";
 
 const Services = () => {
-    const values = [{value: "90%", title: "Clients Statisfied"},
-    {value: "90%", title: "Projects Success"},
-    {value: "85%", title: "Client Trust"},
-    {value: "95%", title: "Design Functiinality"}];
+    const values = [{ value: "60%", title: "Clients Statisfied" },
+                    { value: "70%", title: "Projects Success" },
+                    { value: "80%", title: "Client Trust" },
+                    { value: "90%", title: "Design Functiinality" }];
+    const offers = ["Interior Designs", "Interior Designs", "Interior Designs"];
+    const reasons = [{ value: "6385", text: "Project Success" },
+                    { value: "589", text: "Win Awards" },
+                    { value: "159", text: "Project Teams" },
+                    { value: "1596", text: "Customer Happy" }]
     return (
         <main>
-            <PageTitle title={"Services"} />
 
             <section className={styles.reasons}>
                 <div className={styles.reasons_content}>
@@ -22,18 +25,10 @@ const Services = () => {
                     <div className={styles.reasons_value}>
                         <h1>The reasons</h1>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td><h2>6385</h2><span>Project Success</span></td>
-                                    <td><h2>589</h2><span>Win Awards</span></td>
-                                </tr>
-                                <tr>
-                                    <td><h2>159</h2><span>Project Teams</span></td>
-                                    <td><h2>1596</h2><span>Customer Happy</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <ul>
+                            {reasons.map(({value, text}, item) =>
+                                <li key={item}><h2>{value}</h2><span>{text}</span></li>)}
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -43,9 +38,8 @@ const Services = () => {
                     <h1>Focus Sevices</h1>
                     <p>It is a long established fact that a reader will be distracted.</p>
                     <div className={styles.offers_container}>
-                        <Offer style={"gray"} title={"Interior Designs"} discription={"It is a long established fact that a reader will be distracted by the readable content."} />
-                        <Offer style={"gray"} title={"Interior Designs"} discription={"It is a long established fact that a reader will be distracted by the readable content."} />
-                        <Offer style={"gray"} title={"Interior Designs"} discription={"It is a long established fact that a reader will be distracted by the readable content."} />
+                        {offers.map((item, index) =>
+                            <Offer key={index} style={"gray"} title={item} discription={"It is a long established fact that a reader will be distracted by the readable content."} />)}
                     </div>
                 </div>
             </section>
@@ -55,8 +49,8 @@ const Services = () => {
                     <div className={styles.statistics_discription}>
                         <h2>Services statistics</h2>
                         <div className={styles.statistics_container}>
-                            {values.map((item, index) => 
-                                <RoundProgress key={index} style={"light"} value={item.value} title={item.title} />)}
+                            {values.map(({ value, title }, index) =>
+                                <RoundProgress key={index} style={"light"} value={value} title={title} />)}
                         </div>
                         <p className={styles.notes}>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     </div>

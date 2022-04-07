@@ -53,7 +53,7 @@ const Footer = () => {
                         <h5>Contact Site</h5>
                         <ul>
                             {contacts.map(({icon, value}, index) =>
-                                <li><img src={icon} alt="icon" /><p>{value}</p></li>)}
+                                <li key={index} ><img src={icon} alt="icon" /><p>{value}</p></li>)}
                         </ul>
                     </div>
                 </div>

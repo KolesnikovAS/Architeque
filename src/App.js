@@ -8,11 +8,13 @@ import Services from "./Pages/Services/Services";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Teams from "./Pages/Teams/Teams";
 import Contacts from "./Pages/Contacts/Contacts";
+import PageTitle from "./Containers/PageTitle/PageTitle";
 
 const App = () => {
     return (
         <BrowserRouter>
             <Header />
+            <PageTitle />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/About" element={<About />} />

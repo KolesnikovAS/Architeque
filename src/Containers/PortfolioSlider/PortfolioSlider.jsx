@@ -3,16 +3,11 @@ import portfolioImage1 from "../../Assets/images/PortfolioSlider/portfolioslide1
 import portfolioImage2 from "../../Assets/images/PortfolioSlider/portfolioslide2.jpg";
 import portfolioImage3 from "../../Assets/images/PortfolioSlider/portfolioslide3.jpg";
 import portfolioImage4 from "../../Assets/images/PortfolioSlider/portfolioslide4.jpg";
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import styles from "./PortfolioSlider.module.scss";
-import "./PortfolioSlider.css"
-
-
-
-
 
 const PortfolioSlider = () => {
     const slides = [portfolioImage1, portfolioImage2, portfolioImage3, portfolioImage4, portfolioImage1,
@@ -20,9 +15,7 @@ const PortfolioSlider = () => {
 
     return (
         <section className={styles.portfolio}>
-            <button onClick={Swiper.slideNext}>Slide to the next slide</button>
             <Swiper
-                onSwiper={(s) => console.log(s)}
                 modules={[Navigation]}
                 spaceBetween={50}
                 slidesPerView={4}

@@ -6,6 +6,6 @@ import inicon from "../../Assets/images/Footer/in.png"
 import instagram from "../../Assets/images/Footer/instagram.png"
 import twiter from "../../Assets/images/Footer/twiter.png"
 
-const images = {phone, position, mail, facebook, inicon, instagram, twiter}
+const images = { phone, position, mail, facebook, inicon, instagram, twiter }
 
 export default images;

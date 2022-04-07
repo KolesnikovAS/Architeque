@@ -10,7 +10,7 @@ const RoundProgress = ({ style, value, title }) => {
             <span>{value}</span>
             <svg className={styles[style]}>
                 <circle cx="55" cy="55" r="52"></circle>
-                <circle stroke-dashoffset={fullProgress - progress} stroke-dasharray={fullProgress} cx="55" cy="55" r="52"></circle>
+                <circle strokeDashoffset={fullProgress - progress} strokeDasharray={fullProgress} cx="55" cy="55" r="52"></circle>
             </svg>
             <p>{title}</p>
         </div>

@@ -1,53 +1,40 @@
 import React from "react";
 import styles from "./Home.module.scss"
-import slide1Img from "../../Assets/images/Home/slide1.jpg"
-import arrow from "../../Assets/images/Home/arrow.png"
-import videoPoster from "../../Assets/images/Home/videoPoster.jpg"
 import Button from "../../Components/Button/Button";
 import Offer from "../../Components/Offer/Offer"
 import Banner from "../../Containers/Banner/Banner"
-import brendIcon1 from "../../Assets/images/Home/brendicon1.png";
-import brendIcon2 from "../../Assets/images/Home/brendicon2.png";
-import brendIcon3 from "../../Assets/images/Home/brendicon3.png";
-import brendIcon4 from "../../Assets/images/Home/brendicon4.png";
-import advantagesImg from "../../Assets/images/Home/advantages.jpg"
-import doubleCheck from "../../Assets/images/Home/doublecheck.png"
 import PortfolioSlider from "../../Containers/PortfolioSlider/PortfolioSlider";
 import RoundProgress from "../../Components/RoundProgress/RoundProgress";
+import images from "./HomeImages"
+import PresentSlider from "../../Containers/PresentsSlider/PresentsSlider";
 
 const Home = () => {
-    const partners = [{ icon: brendIcon1, name: "LOGOIPSUM" },
-    { icon: brendIcon2, name: "logoipsum" },
-    { icon: brendIcon3, name: "logoipsum" },
-    { icon: brendIcon4, name: "LOGOIPSUM" }]
+    const offers = ["Interior Designs", "Building Designs", "Landscape Designs"];
+    const advantages = ["Profesional works", "Best value solutions", "100% Guarantee", "High professional teams",
+                    "Profesional teams", "Architecture licensed"];
+    const partners = [{ icon: images.brendIcon1, name: "LOGOIPSUM" },
+                    { icon: images.brendIcon2, name: "logoipsum" },
+                    { icon: images.brendIcon3, name: "logoipsum" },
+                    { icon: images.brendIcon4, name: "LOGOIPSUM" }];
     return (
         <main>
-            <section className={styles.slider}>
-                <div className={styles.slider_content}>
-                    <h1>Modern minimalist home</h1>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
-                    <button><img src={arrow} alt="arrow" /></button>
-                    <button><img src={arrow} alt="arrow" /></button>
-                </div>
-                <img className={styles.slide_image} src={slide1Img} alt="design" />
-            </section>
-
+            <PresentSlider />
+            
             <section className={styles.about}>
                 <div className={styles.promo}>
-                    <video src="#" width="883px" height="419px" controls="controls" poster={videoPoster} />
+                    <video src="#" controls="controls" poster={images.videoPoster} />
                     <ul>
-                        {partners.map((partner, index) =>
-                            <li key={index}><img src={partner.icon} alt="brendicon" /><span>{partner.name}</span></li>)}
+                        {partners.map(({icon, name}, index) =>
+                            <li key={index}><img src={icon} alt="brendicon" /><span>{name}</span></li>)}
                     </ul>
                 </div>
                 <div className={styles.discription}>
                     <h2>About</h2>
-                    <p style={{ textAlign: "justify", marginBottom: "57px" }} >It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+                    <p className={styles.text} >It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
                     <Button style={"black"} title={"Learn more"} />
-                    <p style={{ marginTop: "197px" }}>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution."</p>
-                    <p>&nbsp;</p>
-                    <p style={{ color: "#BFBFBF", fontFamily: "Poppins-Bold, san-serif" }}>Ramones Aoky</p>
-                    <p style={{ color: "black", fontFamily: "Poppins-SemiBold, san-serif" }}>CEO Company</p>
+                    <p className={styles.qoute} >"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution."</p>
+                    <p className={styles.qoute_owner} >Ramones Aoky</p>
+                    <p className={styles.owner_position} >CEO Company</p>
                 </div>
             </section>
 
@@ -58,8 +45,8 @@ const Home = () => {
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
                         <Button style={"white"} title={"Learn more"} />
                     </div>
-                    <RoundProgress style={"dark"} value={"90%"} title={"Clients statisfied"} />
-                    <RoundProgress style={"dark"} value={"95%"} title={"Projects success"} />
+                    <RoundProgress style={"dark"} value={"70%"} title={"Clients statisfied"} />
+                    <RoundProgress style={"dark"} value={"90%"} title={"Projects success"} />
                 </div>
             </section>
 
@@ -67,26 +54,16 @@ const Home = () => {
                 <div className={styles.advantages_content}>
                     <div className={styles.advantages_content_discription}>
                         <h2>Why us?</h2>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td><img src={doubleCheck} alt="doublecheck" /><span>Profesional works</span></td>
-                                    <td><img src={doubleCheck} alt="doublecheck" /><span>Best value solutions</span></td>
-                                </tr>
-                                <tr>
-                                    <td><img src={doubleCheck} alt="doublecheck" /><span>100% Guarantee</span></td>
-                                    <td><img src={doubleCheck} alt="doublecheck" /><span>High professional teams</span></td>
-                                </tr>
-                                <tr>
-                                    <td><img src={doubleCheck} alt="doublecheck" /><span>Profesional teams</span></td>
-                                    <td><img src={doubleCheck} alt="doublecheck" /><span>Architecture licensed</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <ul>
+                            {advantages.map((item, index) => 
+                                <li key={index}>
+                                    <img src={images.doubleCheck} alt="doublecheck" /><span>{item}</span>
+                                </li>)}
+                        </ul>
                         <p>We’re committed to delivering eye-catching architect designs</p>
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     </div>
-                    <img className={styles.advantages_content_image} src={advantagesImg} alt="design" />
+                    <img className={styles.advantages_content_image} src={images.advantagesImg} alt="design" />
                 </div>
             </section>
 
@@ -95,16 +72,14 @@ const Home = () => {
                     <h1 className={styles.services_title}>Our Services</h1>
                     <p className={styles.services_discription}>It is a long established fact that a reader will be distracted.</p>
                     <div className={styles.offers_container}>
-                        <Offer title={"Interior Designs"} discription={"It is a long established fact that a reader will be distracted by the readable content."} />
-                        <Offer title={"Building Designs"} discription={"It is a long established fact that a reader will be distracted by the readable content."} />
-                        <Offer title={"Landscape Designs"} discription={"It is a long established fact that a reader will be distracted by the readable content."} />
+                        {offers.map((offer, index) => 
+                            <Offer key={index} title={offer} discription={"It is a long established fact that a reader will be distracted by the readable content."} />)}    
                     </div>
                 </div>
             </section>
 
             <Banner />
             <PortfolioSlider />
-
         </main>
     )
 }

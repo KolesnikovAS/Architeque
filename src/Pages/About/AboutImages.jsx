@@ -12,7 +12,9 @@ import skillsImage from "../../Assets/images/About/skills.jpg"
 import postImage1 from "../../Assets/images/Post/post1.jpg"
 import postImage2 from "../../Assets/images/Post/post2.jpg"
 
-const images = {puzzleImage1, puzzleImage2, puzzleImage3, valueIcon1, valueIcon2, valueIcon3, valueIcon4, 
-               stuffPhoto1, stuffPhoto2, stuffPhoto3, skillsImage, postImage1, postImage2}
+const images = {
+    puzzleImage1, puzzleImage2, puzzleImage3, valueIcon1, valueIcon2, valueIcon3, valueIcon4,
+    stuffPhoto1, stuffPhoto2, stuffPhoto3, skillsImage, postImage1, postImage2
+}
 
 export default images;

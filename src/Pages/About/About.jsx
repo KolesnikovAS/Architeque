@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./About.module.scss"
-import PageTitle from "../../Containers/PageTitle/PageTitle";
 import Value from "../../Components/Value/Value";
 import Stuff from "../../Components/Stuff/Stuff";
 import Button from "../../Components/Button/Button";
@@ -27,7 +26,6 @@ const About = () => {
                         { image: images.puzzleImage3, size: "100%", title: "View portfolio" }]
     return (
         <main>
-            <PageTitle title={"About"} />
 
             <section className={styles.skills}>
                 <div className={styles.skills_content}>

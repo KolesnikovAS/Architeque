@@ -1,64 +1,28 @@
-.slider{
-    box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.3);
-    position: relative;
-    height: 745px;
-    padding-top: 234px;
-    .slide_image{
-        width: 50%;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    .slider_content{
-        position: relative;
-        z-index: 1;
-        margin: 0 auto;
-        max-width: 1140px;
-        h1{
-            line-height: 96px;
-            font-family: Poppins-Bold, sans-serif;
-            font-size: 64px;
-        }
-        p{
-            width: 515px;
-            line-height: 24px;
-            font-family: Poppins-Medium, sans-serif;
-            font-size: 16px;
-        }
-        button{
-            margin-left: 15px;
-            margin-top: 190px;
-            line-height: 0;
-            display: inline-block;
-        }
-        button:last-child{
-            margin-left: 30px;
-            transform: rotate(180deg);
-        }
-    }
-}
-
-.about{
+.about {
     overflow: hidden;
     height: 1049px;
     display: flex;
     position: relative;
-    .promo{
+    .promo {
         width: 50%;
         position: relative;
         top: 132px;
         left: 0;
-        ul{
+        video {
+            width: 883px;
+            height: 419px;
+        }
+        ul {
             margin: 135px 116px 0 auto;
             width: 430px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            li{
+            li {
                 line-height: 100px;
                 display: flex;
                 align-items: center;
-                span{
+                span {
                     margin-left: 7px;
                     font-family: Poppins-Regular, sans-serif;
                     font-size: 24px;
@@ -66,71 +30,86 @@
             }
         }
     }
-    .discription{
+    .discription {
         background-image: url(../../Assets/images/Home/discriptionBG.png);
         margin-left: 42px;
         padding: 19px 0 0 26px;
         width: 528px;
         position: relative;
         top: 178px;
-        h2{
+        h2 {
             line-height: 72px;
             font-family: Poppins-Bold, sans-serif;
             font-size: 48px;
             margin-bottom: 13px;
         }
-        p{
+        p {
             width: 502px;
-            color: #6C6C6C;
+            color: #6c6c6c;
             text-align: right;
             line-height: 24px;
             font-family: Poppins-Medium, sans-serif;
             font-size: 16px;
         }
-
+        .text {
+            text-align: justify;
+            margin-bottom: 57px;
+        }
+        .qoute {
+            margin-top: 197px;
+            margin-bottom: 23px;
+        }
+        .qoute_owner {
+            font-size: 18px;
+            color: #bfbfbf;
+            font-family: Poppins-Bold, san-serif;
+        }
+        .owner_position {
+            font-size: 14px;
+            color: black;
+            font-family: Poppins-Bold, san-serif;
+        }
     }
-
 }
 
-.achievments{
+.achievments {
     background-image: url(../../Assets/images/Home/achivmentsBG.jpg);
     background-size: cover;
     height: 527px;
     position: relative;
     color: white;
-    .achievments_content{
+    .achievments_content {
         padding-top: 154px;
         display: flex;
         margin: 0 auto;
         max-width: 1140px;
         position: relative;
         z-index: 2;
-        .achievments_title{
-            h1{
+        .achievments_title {
+            h1 {
                 width: 685px;
                 line-height: 90px;
                 font-family: Poppins-Bold, sans-serif;
                 font-size: 64px;
             }
-            p{
+            p {
                 line-height: 24px;
                 font-family: Poppins-Medium, sans-serif;
                 font-size: 16px;
                 width: 515px;
                 margin-bottom: 31px;
-
             }
         }
-        .achievments_numbers:last-child{
+        .achievments_numbers:last-child {
             margin-left: 14px;
         }
-        .achievments_numbers{
+        .achievments_numbers {
             display: flex;
             align-items: center;
         }
     }
 }
-.achievments:after{
+.achievments:after {
     z-index: 1;
     content: "";
     position: absolute;
@@ -142,103 +121,101 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.advantages{
+.advantages {
     height: 906px;
     color: white;
-    &_content{
+    &_content {
         padding-top: 165px;
         color: black;
         display: flex;
         max-width: 1140px;
         margin: 0 auto;
-        &_image{
+        &_image {
             margin-left: auto;
             width: 513px;
             height: 579px;
         }
-        &_discription{
+        &_discription {
             width: 600px;
-            h2{
+            h2 {
                 margin-top: 91px;
                 width: 660px;
                 line-height: 72px;
                 font-family: Poppins-Bold, sans-serif;
-                font-size: 48px; 
+                font-size: 48px;
             }
-            table{
+            ul {
                 margin-top: 25px;
-                margin-bottom: 40px;
-                tr{
+                margin-bottom: 48px;
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    padding-left: 4px;
+                    width: 240px;
                     line-height: 48px;
-                    td:first-child{
-                        width: 235px;
-                    }
-                    td{
-                        span{
-                            color: #6C6C6C;
-                            margin-left: 14.5px;
-                            line-height: 24px;
-                            font-family: Poppins-Medium, sans-serif;
-                            font-size: 16px; 
-                        }
+                    span {
+                        color: #6c6c6c;
+                        margin-left: 14.5px;
+                        line-height: 24px;
+                        font-family: Poppins-Medium, sans-serif;
+                        font-size: 16px;
                     }
                 }
             }
-            p{
+            p {
+                padding-left: 5px;
                 width: 502px;
                 line-height: 27px;
                 font-family: Poppins-BoldItalic, sans-serif;
-                font-size: 18px; 
+                font-size: 18px;
             }
-            p:last-child{
-                color: #6C6C6C;
+            p:last-child {
+                color: #6c6c6c;
                 margin-top: 12px;
                 width: 502px;
                 line-height: 21px;
                 font-family: Poppins-Medium, sans-serif;
-                font-size: 14px; 
+                font-size: 14px;
             }
         }
-
     }
-
 }
 
-.services{
+.services {
     background-image: url(../../Assets/images/Home/servicesBG.jpg);
     height: 776px;
-    &_content{
+    &_content {
         padding-top: 142px;
         max-width: 1140px;
         margin: 0 auto;
-        .offers_container{
+        .offers_container {
             display: flex;
             justify-content: space-between;
         }
     }
-    &_title{
+    &_title {
         text-align: right;
         line-height: 90px;
         font-family: Poppins-Bold, sans-serif;
-        font-size: 64px; 
+        font-size: 64px;
     }
-    &_discription{
+    &_discription {
         text-align: right;
-        color: #6C6C6C;
+        color: #6c6c6c;
         line-height: 24px;
         font-family: Poppins-Medium, sans-serif;
-        font-size: 16px; 
+        font-size: 16px;
         margin-bottom: 77px;
     }
 }
 
-.portfolio{
+.portfolio {
     display: flex;
     justify-content: space-between;
     width: 100%;
     height: 665px;
     padding: 29px 0;
-    img{
+    img {
         width: 458px;
     }
 }

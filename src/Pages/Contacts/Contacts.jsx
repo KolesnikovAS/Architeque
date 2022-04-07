@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Contacts.module.scss";
-import PageTitle from "../../Containers/PageTitle/PageTitle";
 import phone from "../../Assets/images/Footer/phone.png"
 import position from "../../Assets/images/Footer/position.png"
 import mail from "../../Assets/images/Footer/mail.png"
@@ -8,6 +7,7 @@ import { Formik } from "formik";
 import * as Yup from 'yup';
 import Input from "../../Components/Input/Input";
 import Textarea from "../../Components/Input/Textarea";
+// import GoogleMap from "../../Containers/GoogleMap/GoogleMap";
 
 const Contacts = () => {
     const validate = Yup.object({
@@ -25,9 +25,11 @@ const Contacts = () => {
             resetForm();
         }, 400);
     }
+    const contacts = [{icon: position, value: "Company No. 08116577, 101 Baker Street, New York, 12345, USA."},
+                    {icon: phone, value: "+896 120 5889"},
+                    {icon: mail, value: "mail@company.com"}];
     return (
         <main>
-            <PageTitle title={"Contacts"} />
 
             <section className={styles.contacts}>
                 <div className={styles.contacts_content}>
@@ -39,9 +41,8 @@ const Contacts = () => {
                         <p>Mon-Sat: 10am - 7pm</p>
                         <p style={{ color: "#ef0000" }}>Sun: closed</p>
                         <ul>
-                            <li><img src={position} alt="position" /><p>Company No. 08116577, 101 Baker Street, New York, 12345, USA.</p></li>
-                            <li><img src={phone} alt="phone" /><p>+896 120 5889</p></li>
-                            <li><img src={mail} alt="mail" /><p>mail@company.com</p></li>
+                            {contacts.map(({icon, value}, index) => 
+                                <li key={index}><img src={icon} alt="icon" /><p>{value}</p></li>)}
                         </ul>
                     </div>
 
@@ -113,10 +114,10 @@ const Contacts = () => {
                 </div>
             </section>
 
+            {/* <GoogleMap /> */}
             <section className={styles.google_map}>
                 <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1nDAPw1IBm4lTOFJe-Vh0w3kdBwW4VmfN&ehbc=2E312F" width="1920" height="545" title="map"></iframe>
-            </section>
-
+            </section>                   
 
         </main>
     )
