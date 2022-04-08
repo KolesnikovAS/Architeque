@@ -9,8 +9,8 @@
         top: 132px;
         left: 0;
         video {
-            width: 883px;
-            height: 419px;
+            width: 100%;
+            height: auto;
         }
         ul {
             margin: 135px 116px 0 auto;
@@ -35,6 +35,7 @@
         margin-left: 42px;
         padding: 19px 0 0 26px;
         width: 528px;
+        height: 900px;
         position: relative;
         top: 178px;
         h2 {
@@ -100,12 +101,8 @@
                 margin-bottom: 31px;
             }
         }
-        .achievments_numbers:last-child {
-            margin-left: 14px;
-        }
-        .achievments_numbers {
+        .progress_container {
             display: flex;
-            align-items: center;
         }
     }
 }
@@ -131,15 +128,16 @@
         max-width: 1140px;
         margin: 0 auto;
         &_image {
+            object-fit: scale-down;
             margin-left: auto;
-            width: 513px;
-            height: 579px;
+            width: 45%;
+            max-width: 513px;
+            height: auto;
         }
         &_discription {
-            width: 600px;
+            width: 500px;
             h2 {
                 margin-top: 91px;
-                width: 660px;
                 line-height: 72px;
                 font-family: Poppins-Bold, sans-serif;
                 font-size: 48px;
@@ -184,6 +182,7 @@
 .services {
     background-image: url(../../Assets/images/Home/servicesBG.jpg);
     height: 776px;
+    background-position: center;
     &_content {
         padding-top: 142px;
         max-width: 1140px;
@@ -217,5 +216,200 @@
     padding: 29px 0;
     img {
         width: 458px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .services{
+        .services_content{
+            padding: 142px 20px 0 20px;
+        }
+    }
+    .advantages{
+        height: auto;
+        .advantages_content{
+            padding: 100px 20px;
+            .advantages_content_discription{
+                h2{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .achievments {
+        .achievments_content {
+            justify-content: space-between;
+            padding: 154px 20px 0 20px;
+            .achievments_title{
+                margin-right: 30px;
+                h1{
+                    width: auto;
+                    font-size: 48px;
+                }
+                p{
+                    width: 450px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .about {
+        height: auto;
+        display: block;
+        .promo {
+            width: 100%;
+            ul {
+                margin: 20px auto 0 auto;
+            }
+        }
+        .discription {
+            padding: 0;
+            margin: 0 auto;
+            h2 {
+                text-align: center;
+            }
+            p {
+                width: 100%;
+            }
+            button {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .services{
+        height: auto;
+        .services_content{
+            padding: 100px 20px;
+            .services_title{
+                text-align: center;
+                font-size: 52px;
+            }
+            .services_discription{
+                font-size: 16px;
+                text-align: center;
+                margin-bottom: 0;
+            }
+            .offers_container{
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+        }
+    }
+    .advantages{
+        .advantages_content{
+            .advantages_content_image{
+                width: 35%;
+            }
+        }
+    }
+    .achievments {
+        height: auto;
+        .achievments_content {
+            padding: 50px 20px 0 20px;
+            display: block;
+            .progress_container {
+                justify-content: space-around;
+                padding-bottom: 50px;
+            }
+            .achievments_title{
+                margin: 0;
+                h1{
+                    text-align: center;
+                    font-size: 52px;
+                }
+                p{
+                    font-size: 16px;
+                    text-align: center;
+                    width: auto;
+                }
+                button{
+                    margin: 0 auto 40px auto;
+                }
+
+            }
+        }
+    }
+}
+@media (max-width: 850px) {
+    .advantages{
+        .advantages_content{
+            .advantages_content_discription{
+                width: 100%;
+                h2{
+                    text-align: center;
+                }
+                ul{
+                    justify-content: space-between;
+                }
+                p{
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+            .advantages_content_image{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .services{
+        .services_content{
+            padding: 50px 20px;
+            .services_title{
+                font-size: 48px;
+            }
+        }
+    }
+    .about {
+        .discription {
+            box-sizing: border-box;
+            padding: 0 20px;
+            width: 100%;
+        }
+    }
+    .achievments {
+        .achievments_content {
+            display: block;
+            .progress_container {
+                justify-content: space-around;
+                flex-wrap: wrap;
+                padding-bottom: 50px;
+                width: 100%;
+            }
+            .achievments_title{
+                h1{
+                    font-size: 40px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .about {
+        .promo {
+            ul {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 20px;
+            }
+        }
+    }
+    .achievments {
+        .achievments_content {
+            .achievments_title{
+                h1{
+                    font-size: 36px;
+                }
+            }
+        }
     }
 }

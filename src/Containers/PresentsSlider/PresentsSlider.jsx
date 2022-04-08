@@ -9,7 +9,11 @@ import "./PresentsSlider.scss";
 import slide1Img from "../../Assets/images/Home/slide1.jpg"
 
 const PresentSlider = () => {
-
+    const slides = [{ image: slide1Img, title: "Modern minimalist home", discription: "It is a long established fact that a reader will be distracted by the readable content of a page." },
+                    { image: slide1Img, title: "Modern minimalist home", discription: "It is a long established fact that a reader will be distracted by the readable content of a page." },
+                    { image: slide1Img, title: "Modern minimalist home", discription: "It is a long established fact that a reader will be distracted by the readable content of a page." },
+                    { image: slide1Img, title: "Modern minimalist home", discription: "It is a long established fact that a reader will be distracted by the readable content of a page." },
+                    { image: slide1Img, title: "Modern minimalist home", discription: "It is a long established fact that a reader will be distracted by the readable content of a page." }]
     return (
         <section className={styles.slider}>
             <Swiper
@@ -24,34 +28,14 @@ const PresentSlider = () => {
                 }}
                 navigation
             >
-                <SwiperSlide>
-                    <div className={styles.slider_content}>
-                        <h1>Modern minimalist home</h1>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
-                    </div>
-                    <img className={styles.slide_image} src={slide1Img} alt="design" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.slider_content}>
-                        <h1>Modern minimalist home</h1>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
-                    </div>
-                    <img className={styles.slide_image} src={slide1Img} alt="design" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.slider_content}>
-                        <h1>Modern minimalist home</h1>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
-                    </div>
-                    <img className={styles.slide_image} src={slide1Img} alt="design" />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.slider_content}>
-                        <h1>Modern minimalist home</h1>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
-                    </div>
-                    <img className={styles.slide_image} src={slide1Img} alt="design" />
-                </SwiperSlide>
+                {slides.map(({ image, title, discription }, index) =>
+                    <SwiperSlide key={index}>
+                        <div className={styles.slider_content}>
+                            <h1>{title}</h1>
+                            <p>{discription}</p>
+                        </div>
+                        <img className={styles.slide_image} src={image} alt="design" />
+                    </SwiperSlide>)}
             </Swiper>
         </section >
     )

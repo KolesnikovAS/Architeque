@@ -8,6 +8,7 @@ import { Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import styles from "./PortfolioSlider.module.scss";
+import "./PortfolioSlider.scss";
 
 const PortfolioSlider = () => {
     const slides = [portfolioImage1, portfolioImage2, portfolioImage3, portfolioImage4, portfolioImage1,
@@ -16,6 +17,7 @@ const PortfolioSlider = () => {
     return (
         <section className={styles.portfolio}>
             <Swiper
+                className="portfolio_slider"
                 modules={[Navigation]}
                 spaceBetween={50}
                 slidesPerView={4}

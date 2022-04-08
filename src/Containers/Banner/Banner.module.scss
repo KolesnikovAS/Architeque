@@ -34,3 +34,49 @@
     }
     
 }
+
+
+@media (max-width: 1200px) {
+    .banner{
+        padding: 0 20px;
+        .banner_content{
+            p{
+                width: 400px;
+                font-size: 18px;
+            }
+            button{
+                margin-right: 0;
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    .banner{
+        .banner_content{
+            p{
+                width: 300px;
+            }
+        }
+    }
+}
+@media (max-width: 800px) {
+    .banner{
+        .banner_image{
+            width: 100%;
+            height: 100%;
+        }
+        .banner_content{
+            p{
+                width: 60%;
+            }
+            button{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .banner{
+        display: none;
+    }
+}

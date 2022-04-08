@@ -45,8 +45,10 @@ const Home = () => {
                         <p>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
                         <Button style={"white"} title={"Learn more"} />
                     </div>
-                    <RoundProgress style={"dark"} value={"70%"} title={"Clients statisfied"} />
-                    <RoundProgress style={"dark"} value={"90%"} title={"Projects success"} />
+                    <div className={styles.progress_container}>
+                        <RoundProgress style={"dark"} value={"70%"} title={"Clients statisfied"} />
+                        <RoundProgress style={"dark"} value={"90%"} title={"Projects success"} />
+                    </div>
                 </div>
             </section>
 

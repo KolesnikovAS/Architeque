@@ -2,11 +2,43 @@
     margin-right: 13px;
     display: flex;
     align-items: center;
-    span{
-        position: absolute;
-        font-family: Poppins-Bold, sans-serif;
-        font-size: 24px;
-        margin-left: 33px;
+    position: relative;
+    div{
+        display: flex;
+        align-items: center;
+        span{
+            position: absolute;
+            font-family: Poppins-Bold, sans-serif;
+            font-size: 24px;
+            margin-left: 33px;
+        }
+        svg {
+            transform: rotate(-90deg);
+            position: relative;
+            height: 110px;
+            width: 110px;
+            circle{
+                stroke: #d3d3d3;
+                fill: none;
+                stroke-width: 6px;
+                stroke-linecap: round;
+            }
+        }
+        svg.dark{
+            circle{
+                stroke: #353535;
+            }
+            circle:last-child{
+                stroke-width: 7px;
+                stroke: #777777;
+            }
+        }
+        svg.light{
+            circle:last-child{
+                stroke: black;
+                stroke-width: 7px;
+            }
+        }
     }
     p {
         margin-left: 14px;
@@ -15,31 +47,12 @@
         font-size: 18px;
         width: 100px;
     }
-    svg {
-        transform: rotate(-90deg);
-        position: relative;
-        height: 110px;
-        width: 110px;
-        circle{
-            stroke: #d3d3d3;
-            fill: none;
-            stroke-width: 6px;
-            stroke-linecap: round;
-        }
-    }
-    svg.dark{
-        circle{
-            stroke: #353535;
-        }
-        circle:last-child{
-            stroke-width: 7px;
-            stroke: #777777;
-        }
-    }
-    svg.light{
-        circle:last-child{
-            stroke: black;
-            stroke-width: 7px;
-        }
+}
+
+@media (max-width: 600px) {
+    .round_progress {
+        margin: 20px 0 0 0;
+        width: 100%;
+        justify-content: center;
     }
 }
