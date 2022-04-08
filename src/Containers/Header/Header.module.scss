@@ -21,6 +21,12 @@ header {
             font-family: Poppins-Regular, sans-serif;
             font-size: 12px;
             color: white;
+            a {
+                cursor: pointer;
+                font-family: Poppins-Regular, sans-serif;
+                font-size: 12px;
+                color: white;
+            }
         }
         img {
             height: 16px;
@@ -53,7 +59,58 @@ header {
         }
         nav {
             margin-left: auto;
-            ul {
+            .menu_toggle {
+                display: none;
+            }
+            .menu_button {
+                margin-right: 20px;
+                display: none;
+                align-items: center;
+                position: relative;
+                width: 50px;
+                height: 70px;
+                cursor: pointer;
+                z-index: 7;
+                span,
+                span:before,
+                span:after {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 3px;
+                    background-color: black;
+                    transition-duration: 0.25s;
+                }
+                span:before {
+                    content: "";
+                    top: -12px;
+                }
+                span:after {
+                    content: "";
+                    top: 12px;
+                }
+            }
+            .menu_toggle:checked ~ .menu_button span {
+                transform: rotate(45deg);
+                background-color: white;
+            }
+            .menu_toggle:checked ~ .menu_button span:before {
+                top: 0;
+                transform: rotate(0);
+                background-color: white;
+            }
+            .menu_toggle:checked ~ .menu_button span:after {
+                top: 0;
+                transform: rotate(90deg);
+                background-color: white;
+            }
+            .menu_toggle:checked ~ .menu_box {
+                visibility: visible;
+                width: 75%;
+                max-width: 75%;
+            }
+            .menu_box {
+                position: relative;
                 display: flex;
                 li:last-child {
                     margin-right: 72px;
@@ -94,4 +151,110 @@ header:after {
     width: 100%;
     background-color: white;
     z-index: 1;
+}
+
+@media (max-width: 1200px) {
+    header {
+        .contacts_line {
+            padding: 0 20px;
+        }
+        .nav_line {
+            padding: 0 20px;
+            nav {
+                .menu_box {
+                    li:last-child {
+                        margin-right: 48px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    header {
+        .nav_line {
+            h2:after {
+                display: none;
+            }
+            button {
+                margin-right: 0;
+                position: absolute;
+                right: 135px;
+                color: white;
+                z-index: 1;
+            }
+            nav {
+                .menu_button {
+                    display: flex;
+                    span,
+                    span:before,
+                    span:after {
+                        display: block;
+                        position: absolute;
+                        width: 100%;
+                        height: 3px;
+                        background-color: black;
+                        transition-duration: 0.25s;
+                    }
+                }
+                .menu_box {
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    visibility: hidden;
+                    z-index: 5;
+                    width: 0;
+                    overflow: hidden;
+                    height: 100vh;
+                    background-color: black;
+                    transition-duration: 0.5s;
+                    li:first-child {
+                        margin-top: 90px;
+                    }
+                    li {
+                        font-size: 35px;
+                        line-height: 70px;
+                        padding-left: 20%;
+                        display: block;
+                        a {
+                            font-size: 24px;
+                        }
+                        a.active {
+                            color: white;
+                        }
+                    }
+                }
+                .menu_toggle:checked ~ .menu_box {
+                    visibility: visible;
+                    width: 75%;
+                    max-width: 75%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        .contacts_line {
+            img:first-child {
+                display: none;
+            }
+            span:nth-child(2) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    header {
+        .nav_line {
+            button {
+                display: none;
+            }
+        }
+    }
 }
