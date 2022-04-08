@@ -1,26 +1,28 @@
-.skills{
+.skills {
     height: 832px;
     background-color: white;
-    &_content{
+    &_content {
         padding-top: 150px;
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
-        img{
-            width: 495px;
-            height: 530px;
+        img {
+            width: 45%;
+            max-width: 495px;
+            height: auto;
+            object-fit: scale-down;
         }
-        .skills_discription{
+        .skills_discription {
             padding-top: 10px;
             width: 500px;
             margin-left: auto;
-            h2{
+            h2 {
                 font-size: 48px;
                 font-family: Poppins-Bold, sans-serif;
                 margin-bottom: 15px;
             }
-            p{
-                color: #6C6C6C;
+            p {
+                color: #6c6c6c;
                 text-align: left;
                 line-height: 24px;
                 font-family: Poppins-Medium, sans-serif;
@@ -31,13 +33,13 @@
     }
 }
 
-.values{
+.values {
     background-image: url(../../Assets/images/Home/achivmentsBG.jpg);
     background-size: cover;
     height: 527px;
     position: relative;
     color: white;
-    &_content{
+    &_content {
         padding-top: 165px;
         display: flex;
         justify-content: space-around;
@@ -47,7 +49,7 @@
         z-index: 2;
     }
 }
-.values:after{
+.values:after {
     z-index: 1;
     content: "";
     position: absolute;
@@ -59,29 +61,29 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.teams{
+.teams {
     width: 100%;
     background-color: white;
-    &_content{
+    &_content {
         padding-top: 100px;
         max-width: 1140px;
         margin: 0 auto;
-        h1{
+        h1 {
             text-align: center;
             font-size: 60px;
             font-family: Poppins-Bold, sans-serif;
             line-height: 96px;
         }
-        p{
+        p {
             margin: 0 auto;
             width: 500px;
-            color: #6C6C6C;
+            color: #6c6c6c;
             text-align: center;
             line-height: 24px;
             font-family: Poppins-Medium, sans-serif;
             font-size: 16px;
         }
-        ul{
+        ul {
             padding-top: 49px;
             display: flex;
             justify-content: space-around;
@@ -89,10 +91,10 @@
     }
 }
 
-.puzzle{
+.puzzle {
     width: 100%;
     background-color: white;
-    &_content{
+    &_content {
         padding-top: 87px;
         max-width: 1140px;
         margin: 0 auto;
@@ -102,34 +104,198 @@
     }
 }
 
-.blog{
+.blog {
     width: 100%;
     background-color: white;
-    &_content{
+    &_content {
         padding: 73px 0 128px 0;
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
-        .blog_posts{
+        .blog_posts {
             width: 50%;
             display: flex;
             justify-content: space-between;
         }
-        .blog_discription{
+        .blog_discription {
             width: 50%;
             padding-top: 10px;
-            h2{
+            h2 {
                 font-size: 48px;
                 font-family: Poppins-Bold, sans-serif;
                 line-height: 96px;
             }
-            p{
+            p {
                 width: 500px;
-                color: #6C6C6C;
+                color: #6c6c6c;
                 line-height: 24px;
                 font-family: Poppins-Medium, sans-serif;
                 font-size: 16px;
                 margin-bottom: 58px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .blog{
+        .blog_content{
+            padding: 73px 20px 128px 20px;
+            justify-content: space-between;
+            .blog_discription{
+                width: 35%;
+                p{
+                    width: 100%;
+                }
+            }
+            .blog_posts{
+                width: 60%;
+                justify-content: space-around;
+            }
+        }
+    }
+    .skills {
+        .skills_content {
+            padding: 150px 20px 0 20px;
+            img {
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .blog{
+        .blog_content{
+            padding: 0 20px 128px 20px;
+            width: 95%;
+            display: block;
+            .blog_discription{
+                width: 100%;
+                margin: 0 auto;
+                button{
+                    margin: 0 auto;
+                }
+                h2{
+                    text-align: center;
+                }
+                p{
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+            }
+            .blog_posts{
+                width: 100%;
+                margin-top: 50px;
+            }
+        }
+    }
+    .skills {
+        height: auto;
+        .skills_content {
+            padding: 100px 20px;
+            .skills_discription {
+                width: 450px;
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .teams{
+        .teams_content{
+            ul{
+                padding-top: 0;
+                flex-wrap: wrap;
+                li{
+                    margin: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .skills {
+        .skills_content {
+            display: block;
+            img {
+                width: 60%;
+                display: block;
+                margin: 0 auto;
+            }
+            .skills_discription {
+                margin: 20px auto 0 auto;
+                width: 80%;
+                h2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 750px) {
+    .teams{
+        .teams_content{
+            ul{
+                flex-wrap: wrap;
+                li{
+                    margin: 30px 50px;
+                }
+            }
+        }
+    }
+    .values{
+        .values_content{
+            height: 100%;
+            padding: 0;
+            flex-wrap: wrap;
+            align-content: space-around;
+            div{
+                margin: 0 30px;
+            }
+        }
+    }
+}
+@media (max-width: 650px) {
+    .blog{
+        .blog_content{
+            padding: 0 20px 70px 20px;
+            .blog_posts{
+                display: block;
+                div{
+                    margin: 30px auto 0 auto;
+                }
+            }
+        }
+    }
+    .skills {
+        .skills_content {
+            .skills_discription {
+                width: 90%;
+                h2 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .values{
+        .values_content{
+            div{
+                margin: 0;
+            }
+        }
+    }
+    .teams{
+        .teams_content{
+            width: 90%;
+            padding-top: 50px;
+            h1{
+                font-size: 48px;
+            }
+            p{
+                width: 100%;
             }
         }
     }

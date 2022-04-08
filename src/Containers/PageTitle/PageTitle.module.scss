@@ -14,3 +14,25 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .page_title{
+        .page_title_content{
+            padding: 0 20px;
+        }
+    }
+}
+@media (max-width: 1050px) {
+    .page_title{
+        background-position: center;
+        height: 207px;
+        padding: 0 20px;
+        .page_title_content{
+            h3{
+                line-height: 207px;
+            }
+        }
+    }
+}
+    
+    

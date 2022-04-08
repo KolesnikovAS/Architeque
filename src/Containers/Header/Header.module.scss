@@ -15,6 +15,12 @@ header {
             margin-left: auto;
             margin-right: 0;
         }
+        span:hover{
+            color: #aeaeae;
+            a{
+                color: #aeaeae;
+            }
+        }
         span {
             cursor: pointer;
             margin-right: 24px;

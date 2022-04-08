@@ -21,9 +21,9 @@ const About = () => {
                     { title: "Concept", value: "80" },
                     { title: "Deadline", value: "95" },
                     { title: "Result", value: "85" }]
-    const puzzleItems = [{ image: images.puzzleImage1, size: "48%", title: "View services" },
-                        { image: images.puzzleImage2, size: "48%", title: "View teams" },
-                        { image: images.puzzleImage3, size: "100%", title: "View portfolio" }]
+    const puzzleItems = [{ image: images.puzzleImage1, size: "small", title: "View services" },
+                        { image: images.puzzleImage2, size: "small", title: "View teams" },
+                        { image: images.puzzleImage3, size: "big", title: "View portfolio" }]
     return (
         <main>
 

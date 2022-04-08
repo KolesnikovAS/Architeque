@@ -8,3 +8,18 @@
         margin: 0 auto;
     }
 }
+.puzzle_item.small{
+    width: 48%;
+}
+.puzzle_item.big{
+    width: 100%;
+}
+
+@media (max-width: 750px) {
+    .puzzle_item{
+        margin-bottom: 30px;
+    }
+    .puzzle_item.small{
+        width: 100%;
+    }
+}
