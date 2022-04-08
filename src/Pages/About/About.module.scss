@@ -35,6 +35,7 @@
 
 .values {
     background-image: url(../../Assets/images/Home/achivmentsBG.jpg);
+    background-position: center;
     background-size: cover;
     height: 527px;
     position: relative;
@@ -296,6 +297,17 @@
             }
             p{
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .values{
+        height: auto;
+        .values_content{
+            div{
+                margin: 30px;
             }
         }
     }

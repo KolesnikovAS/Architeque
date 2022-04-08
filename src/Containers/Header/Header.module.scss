@@ -110,11 +110,6 @@ header {
                 transform: rotate(90deg);
                 background-color: white;
             }
-            .menu_toggle:checked ~ .menu_box {
-                visibility: visible;
-                width: 75%;
-                max-width: 75%;
-            }
             .menu_box {
                 position: relative;
                 display: flex;

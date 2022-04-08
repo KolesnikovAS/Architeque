@@ -2,23 +2,26 @@
     width: 100%;
     background-color: white;
     &_content {
-        padding: 135px 0 134px 0;
         max-width: 1140px;
         margin: 0 auto;
         display: flex;
         position: relative;
+        height: 645px;
+        padding: 135px 0 134px 0;
         img {
+            position: absolute;
             height: 645px;
             width: 728px;
         }
         .reasons_value {
+            position: relative;
             box-sizing: border-box;
             padding: 64px 80px 48px 81px;
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-            position: absolute;
             left: 50%;
-            top: 224px;
+            margin-top: 89px;
             width: 570px;
+            height: 470px;
             background-color: white;
             h1 {
                 line-height: 76px;
@@ -32,7 +35,7 @@
                 font-family: Poppins-Medium, sans-serif;
                 font-size: 16px;
             }
-            ul:after{
+            ul:after {
                 content: "";
                 display: block;
                 background-color: black;
@@ -116,7 +119,6 @@
                 width: 100%;
                 height: 240px;
                 align-content: space-between;
-
                 display: flex;
                 flex-wrap: wrap;
                 margin: 50px 0 45px 0;
@@ -132,15 +134,18 @@
             }
         }
         .statstics_image {
+            object-fit: scale-down;
+            width: 45%;
             margin-left: auto;
-            width: 513px;
-            height: 579px;
+            max-width: 513px;
+            height: auto;
         }
     }
 }
 
 .order {
     background-image: url(../../Assets/images/Home/achivmentsBG.jpg);
+    background-position: center;
     background-size: cover;
     height: 527px;
     position: relative;
@@ -182,4 +187,185 @@
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 1200px) {
+    .statistics {
+        .statistics_content {
+            padding: 70px 20px 138px 20px;
+        }
+    }
+    .offers {
+        .offers_content {
+            padding: 0 20px;
+            h1 {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+            .offers_container {
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+        }
+    }
+    .reasons {
+        .reasons_content {
+            padding: 135px 20px 134px 20px;
+            .reasons_value {
+                left: auto;
+                margin-left: auto;
+            }
+        }
+    }
+}
+@media (max-width: 1050px) {
+    .statistics {
+        .statistics_content {
+            padding: 0 20px 138px 20px;
+            .statstics_image {
+                width: 38%;
+            }
+        }
+    }
+}
+@media (max-width: 900px) {
+    .statistics {
+        .statistics_content {
+            .statistics_discription {
+                h2{
+                    text-align: center;
+                }
+                p{
+                    text-align: center;
+                    padding: 0;
+                }
+                margin: 0 auto;
+                .statistics_container{
+                    padding: 0;
+                    justify-content: space-around;
+                    height: auto;
+                    div{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .statstics_image {
+                display: none;
+            }
+        }
+    }
+    .offers {
+        .offers_content {
+            h1 {
+                font-size: 48px;
+                line-height: 64px;
+            }
+            .offers_container {
+                padding: 0;
+            }
+        }
+    }
+    .reasons {
+        .reasons_content {
+            padding: 80px 0;
+            img {
+                width: 100%;
+            }
+            .reasons_value {
+                margin: 89px auto 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .order {
+        height: 307px;
+        .order_content {
+            padding: 50px 20px 0 20px;
+            h1 {
+                text-align: center;
+                color: white;
+                line-height: 96px;
+                font-family: Poppins-Bold, sans-serif;
+                font-size: 40px;
+            }
+            p {
+                font-size: 14px;
+                width: 100%;
+            }
+            button {
+                margin: 29px auto;
+            }
+        }
+    }
+    .statistics {
+        .statistics_content {
+            .statistics_discription {
+                width: 100%;
+                .statistics_container{
+                    div{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .reasons {
+        .reasons_content {
+            .reasons_value {
+                padding: 45px;
+                margin: 89px auto 0 auto;
+                width: 90%;
+                h1 {
+                    text-align: center;
+                }
+                p {
+                    text-align: center;
+                }
+                ul {
+                    li {
+                        padding-left: 30px;
+                        box-sizing: border-box;
+                        width: 50%;
+                    }
+                }
+                ul:after {
+                    left: 50%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    .statistics {
+        .statistics_content {
+            .statistics_discription {
+                h2{
+                    text-align: center;
+                    font-size: 40px;
+                    line-height: 56px;
+                }
+                .statistics_container{
+                    margin: 20px 0;
+                }
+            }
+            .statstics_image {
+                display: none;
+            }
+        }
+    }
+    .reasons {
+        .reasons_content {
+            .reasons_value {
+                padding: 30px;
+                h1 {
+                    font-size: 40px;
+                    line-height: 56px;
+                }
+            }
+        }
+    }
 }

@@ -8,9 +8,38 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        img{
+        img {
             height: 415px;
             margin-bottom: 35px;
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .portfolio {
+        .portfolio_content {
+            padding: 155px 20px 120px 20px;
+        }
+    }
+}
+
+@media (max-width: 1180px) {
+    .portfolio {
+        .portfolio_content {
+            justify-content: space-around;
+            img{
+                margin: 0 20px 35px 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .portfolio {
+        .portfolio_content {
+            padding: 80px 20px 80px 20px;
+        }
+    }
+}
+
+
