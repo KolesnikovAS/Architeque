@@ -15,9 +15,9 @@ header {
             margin-left: auto;
             margin-right: 0;
         }
-        span:hover{
+        span:hover {
             color: #aeaeae;
-            a{
+            a {
                 color: #aeaeae;
             }
         }
@@ -49,6 +49,15 @@ header {
         align-items: center;
         position: relative;
         z-index: 2;
+        .dark_layer {
+            opacity: 0.4;
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+        }
         h2 {
             font-family: Poppins-Bold, sans-serif;
             font-size: 36px;
@@ -63,7 +72,7 @@ header {
             height: 64px;
             margin-left: 83px;
         }
-        button{
+        button {
             margin-left: 24px;
         }
         nav {

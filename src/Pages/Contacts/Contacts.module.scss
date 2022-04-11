@@ -161,10 +161,18 @@
             }
             .feedback_form {
                 margin: 0 auto;
-                width: 100%;
             }
             button {
                 margin: 12px auto 0 auto;
+            }
+        }
+    }
+}
+@media (max-width: 720px) {
+    .contacts {
+        .contacts_content {
+            .feedback_form {
+                width: 100%;
             }
         }
     }

@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import {useWindowSize} from 'react-use';
 import { NavLink } from "react-router-dom";
 import {useLockBodyScroll, useToggle} from 'react-use';
 import styles from "./Header.module.scss"
@@ -7,8 +8,15 @@ import mailIcon from "../../Assets/images/Header/mail.png"
 import phoneIcon from "../../Assets/images/Header/phone.png"
 
 const Header = () => {
+
+    let {width} = useWindowSize();
     const [locked, toggleLocked] = useToggle(false)
     useLockBodyScroll(locked);
+
+    useEffect(() => {
+        if (width > 1050 && locked) toggleLocked()
+    }, [width]);
+
 
     const links = [{ path: "/", value: "Home" },
                 { path: "/About", value: "About" },
@@ -26,10 +34,11 @@ const Header = () => {
                 <span>Mon - Sat | 10am - 7pm</span>
             </div>
             <div className={styles.nav_line}>
+                {locked && <div className={styles.dark_layer}></div>}
                 <h2>Architeque</h2>
                 <nav>
-                    <input className={styles.menu_toggle} type="checkbox" id="menu_toggle" />
-                    <label onClick={() => toggleLocked()} className={styles.menu_button} htmlFor="menu_toggle"><span></span></label>
+                    <input onChange={() => toggleLocked()} className={styles.menu_toggle} checked={locked} id="menu_toggle" type="checkbox"/>
+                    <label className={styles.menu_button} htmlFor="menu_toggle"><span></span></label>
                     <ul className={styles.menu_box}>
                         {links.map((link, index) => <li key={index}><NavLink
                             className={({ isActive }) => `${isActive ? styles.active : ''}`}
