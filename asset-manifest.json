@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Architeque/static/css/main.eccc655d.css",
+    "main.css": "/Architeque/static/css/main.3a78aa1f.css",
     "main.js": "/Architeque/static/js/main.c7ba18de.js",
     "static/media/achivmentsBG.jpg": "/Architeque/static/media/achivmentsBG.6d195bd191f455b9de71.jpg",
     "static/media/slide1.jpg": "/Architeque/static/media/slide1.eb2c3ddcfd89d734930f.jpg",
@@ -40,11 +40,11 @@
     "static/media/icon4.png": "/Architeque/static/media/icon4.235b799ff723968ea692.png",
     "static/media/icon1.png": "/Architeque/static/media/icon1.d82468b7f405da106e3e.png",
     "index.html": "/Architeque/index.html",
-    "main.eccc655d.css.map": "/Architeque/static/css/main.eccc655d.css.map",
+    "main.3a78aa1f.css.map": "/Architeque/static/css/main.3a78aa1f.css.map",
     "main.c7ba18de.js.map": "/Architeque/static/js/main.c7ba18de.js.map"
   },
   "entrypoints": [
-    "static/css/main.eccc655d.css",
+    "static/css/main.3a78aa1f.css",
     "static/js/main.c7ba18de.js"
   ]
 }
