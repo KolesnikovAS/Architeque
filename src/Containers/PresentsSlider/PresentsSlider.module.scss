@@ -27,3 +27,34 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .slider{
+        .slider_content{
+            padding: 150px 20px 0 20px;
+            h1{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+        .slide_image {
+            object-fit: cover;
+            object-position: 50% 50%;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .slider{
+        .slider_content{
+            h1{
+                font-size: 40px
+            }
+        }
+    }
+}

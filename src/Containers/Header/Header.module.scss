@@ -63,6 +63,9 @@ header {
             height: 64px;
             margin-left: 83px;
         }
+        button{
+            margin-left: 24px;
+        }
         nav {
             margin-left: auto;
             .menu_toggle {
@@ -114,7 +117,7 @@ header {
                 position: relative;
                 display: flex;
                 li:last-child {
-                    margin-right: 72px;
+                    display: none;
                 }
                 li {
                     margin-right: 48px;
@@ -226,6 +229,9 @@ header:after {
                             color: white;
                         }
                     }
+                }
+                .menu_toggle:checked ~ .menu_box li:last-child {
+                    display: block;
                 }
                 .menu_toggle:checked ~ .menu_box {
                     visibility: visible;

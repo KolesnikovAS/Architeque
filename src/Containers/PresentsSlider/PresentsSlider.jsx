@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+import {useWindowSize} from 'react-use';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
@@ -9,6 +10,14 @@ import "./PresentsSlider.scss";
 import slide1Img from "../../Assets/images/Home/slide1.jpg"
 
 const PresentSlider = () => {
+
+    let [setNavigation, changeNavigation] = useState(true);
+    let {width} = useWindowSize();
+    useEffect(() => {
+        if (width < 600) {
+        changeNavigation(false);
+        } else changeNavigation(true);
+    }, [width]);
     const slides = [{ image: slide1Img, title: "Modern minimalist home", discription: "It is a long established fact that a reader will be distracted by the readable content of a page." },
                     { image: slide1Img, title: "Modern minimalist home", discription: "It is a long established fact that a reader will be distracted by the readable content of a page." },
                     { image: slide1Img, title: "Modern minimalist home", discription: "It is a long established fact that a reader will be distracted by the readable content of a page." },
@@ -26,7 +35,7 @@ const PresentSlider = () => {
                     delay: 2500,
                     disableOnInteraction: true,
                 }}
-                navigation
+                navigation={setNavigation}
             >
                 {slides.map(({ image, title, discription }, index) =>
                     <SwiperSlide key={index}>
