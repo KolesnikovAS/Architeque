@@ -8,9 +8,12 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 35px 20px;
         img {
-            height: 415px;
-            margin-bottom: 35px;
+            flex: 1 1 300px;
+            max-width: 358px;
+            height: auto;
+            min-width: 300px;
         }
     }
 }
@@ -18,28 +21,19 @@
 @media (max-width: 1200px) {
     .portfolio {
         .portfolio_content {
+            justify-content: space-around;
             padding: 155px 20px 120px 20px;
         }
     }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 800px) {
     .portfolio {
         .portfolio_content {
-            justify-content: space-around;
-            img{
-                margin: 0 20px 35px 20px;
+            padding: 80px 20px 80px 20px;
+            img {
+                flex: 0 1 358px;
             }
         }
     }
 }
-
-@media (max-width: 750px) {
-    .portfolio {
-        .portfolio_content {
-            padding: 80px 20px 80px 20px;
-        }
-    }
-}
-
-

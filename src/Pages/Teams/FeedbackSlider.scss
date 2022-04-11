@@ -20,3 +20,10 @@
         background: #777777;
     }
 }
+
+
+@media (max-width: 650px) {
+    .feedback_slider {
+        height: auto;
+    }
+}

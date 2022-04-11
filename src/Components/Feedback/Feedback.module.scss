@@ -44,3 +44,12 @@
         }
     }
 }     
+
+@media (max-width: 650px) {
+    .feedback {
+        width: 100%;
+        p{
+            padding-bottom: 50px;
+        }
+    }
+}

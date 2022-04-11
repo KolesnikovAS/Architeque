@@ -84,7 +84,7 @@
             font-family: Poppins-Bold, sans-serif;
             font-size: 64px;
         }
-        p {
+        .offers_disciption {
             width: 100%;
             color: #757575;
             line-height: 24px;
@@ -201,7 +201,7 @@
             h1 {
                 text-align: center;
             }
-            p {
+            .offers_disciption {
                 text-align: center;
             }
             .offers_container {
@@ -234,19 +234,19 @@
     .statistics {
         .statistics_content {
             .statistics_discription {
-                h2{
+                h2 {
                     text-align: center;
                 }
-                p{
+                p {
                     text-align: center;
                     padding: 0;
                 }
                 margin: 0 auto;
-                .statistics_container{
+                .statistics_container {
                     padding: 0;
                     justify-content: space-around;
                     height: auto;
-                    div{
+                    div {
                         margin-bottom: 20px;
                     }
                 }
@@ -286,10 +286,6 @@
         .order_content {
             padding: 50px 20px 0 20px;
             h1 {
-                text-align: center;
-                color: white;
-                line-height: 96px;
-                font-family: Poppins-Bold, sans-serif;
                 font-size: 40px;
             }
             p {
@@ -305,8 +301,8 @@
         .statistics_content {
             .statistics_discription {
                 width: 100%;
-                .statistics_container{
-                    div{
+                .statistics_container {
+                    div {
                         margin-bottom: 20px;
                     }
                 }
@@ -340,15 +336,29 @@
     }
 }
 @media (max-width: 550px) {
+    .order {
+        .order_content {
+            padding: 30px 20px 0 20px;
+            h1 {
+                font-size: 36px;
+            }
+            p {
+                font-size: 14px;
+                width: 90%;
+            }
+            button {
+            }
+        }
+    }
     .statistics {
         .statistics_content {
             .statistics_discription {
-                h2{
+                h2 {
                     text-align: center;
                     font-size: 40px;
                     line-height: 56px;
                 }
-                .statistics_container{
+                .statistics_container {
                     margin: 20px 0;
                 }
             }

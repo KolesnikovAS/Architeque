@@ -5,8 +5,8 @@
     position: relative;
     .promo {
         width: 50%;
+        margin-top: 132px;
         position: relative;
-        top: 132px;
         left: 0;
         video {
             width: 100%;
@@ -36,8 +36,8 @@
         padding: 19px 0 0 26px;
         width: 528px;
         height: 900px;
+        margin-top: 178px;
         position: relative;
-        top: 178px;
         h2 {
             line-height: 72px;
             font-family: Poppins-Bold, sans-serif;
@@ -266,6 +266,7 @@
         .discription {
             padding: 0;
             margin: 0 auto;
+            margin-bottom: -130px;
             h2 {
                 text-align: center;
             }

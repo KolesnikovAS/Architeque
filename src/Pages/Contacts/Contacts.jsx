@@ -33,8 +33,8 @@ const Contacts = () => {
 
             <section className={styles.contacts}>
                 <div className={styles.contacts_content}>
-                    <p className={styles.notes}>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
                     <h2>Get start's project</h2>
+                    <p className={styles.notes}>It is a long established fact that a reader will be distracted by the readable content of a page.</p>
                     <div className={styles.contacts_container}>
                         <h3>Architeque</h3>
                         <h5>Office Hours</h5>

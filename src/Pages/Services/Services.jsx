@@ -36,7 +36,7 @@ const Services = () => {
             <section className={styles.offers}>
                 <div className={styles.offers_content}>
                     <h1>Focus Sevices</h1>
-                    <p>It is a long established fact that a reader will be distracted.</p>
+                    <p className={styles.offers_disciption}>It is a long established fact that a reader will be distracted.</p>
                     <div className={styles.offers_container}>
                         {offers.map((item, index) =>
                             <Offer key={index} style={"gray"} title={item} discription={"It is a long established fact that a reader will be distracted by the readable content."} />)}

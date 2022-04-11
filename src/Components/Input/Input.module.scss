@@ -54,3 +54,13 @@
 .textarea_container{
     width: 100%;
 }
+
+@media (max-width: 720px) {
+    .input_container, .textarea_container{
+        width: 100%;
+       input.big, input.small{
+           width: 100%;
+       }
+
+    }
+}
