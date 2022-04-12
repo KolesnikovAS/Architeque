@@ -126,16 +126,6 @@
     }
 }
 
-.google_map {
-    width: 100%;
-    overflow: hidden;
-    margin-bottom: -67px;
-    iframe {
-        position: relative;
-        top: -60px;
-        left: -2px;
-    }
-}
 
 @media (max-width: 1200px) {
     .contacts {

@@ -7,7 +7,7 @@ import { Formik } from "formik";
 import * as Yup from 'yup';
 import Input from "../../Components/Input/Input";
 import Textarea from "../../Components/Input/Textarea";
-// import GoogleMap from "../../Containers/GoogleMap/GoogleMap";
+import GoogleMap from "../../Containers/GoogleMap/GoogleMap";
 
 const Contacts = () => {
     const validate = Yup.object({
@@ -113,12 +113,7 @@ const Contacts = () => {
 
                 </div>
             </section>
-
-            {/* <GoogleMap /> */}
-            <section className={styles.google_map}>
-                <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1nDAPw1IBm4lTOFJe-Vh0w3kdBwW4VmfN&ehbc=2E312F" width="1920" height="545" title="map"></iframe>
-            </section>                   
-
+            <GoogleMap />            
         </main>
     )
 }

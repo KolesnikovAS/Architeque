@@ -11,7 +11,6 @@ import Contacts from "./Pages/Contacts/Contacts";
 import PageTitle from "./Containers/PageTitle/PageTitle";
 import NotFound from "./Pages/NotFound/NotFound";
 
-
 const App = () => {
     return (
         <HashRouter>
