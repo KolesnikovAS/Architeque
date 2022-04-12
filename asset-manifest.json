@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Architeque/static/css/main.3a78aa1f.css",
-    "main.js": "/Architeque/static/js/main.c7ba18de.js",
+    "main.css": "/Architeque/static/css/main.16aaa6e5.css",
+    "main.js": "/Architeque/static/js/main.924875c9.js",
     "static/media/achivmentsBG.jpg": "/Architeque/static/media/achivmentsBG.6d195bd191f455b9de71.jpg",
     "static/media/slide1.jpg": "/Architeque/static/media/slide1.eb2c3ddcfd89d734930f.jpg",
     "static/media/videoPoster.jpg": "/Architeque/static/media/videoPoster.7804815bb84a781d3183.jpg",
@@ -40,11 +40,11 @@
     "static/media/icon4.png": "/Architeque/static/media/icon4.235b799ff723968ea692.png",
     "static/media/icon1.png": "/Architeque/static/media/icon1.d82468b7f405da106e3e.png",
     "index.html": "/Architeque/index.html",
-    "main.3a78aa1f.css.map": "/Architeque/static/css/main.3a78aa1f.css.map",
-    "main.c7ba18de.js.map": "/Architeque/static/js/main.c7ba18de.js.map"
+    "main.16aaa6e5.css.map": "/Architeque/static/css/main.16aaa6e5.css.map",
+    "main.924875c9.js.map": "/Architeque/static/js/main.924875c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a78aa1f.css",
-    "static/js/main.c7ba18de.js"
+    "static/css/main.16aaa6e5.css",
+    "static/js/main.924875c9.js"
   ]
 }
