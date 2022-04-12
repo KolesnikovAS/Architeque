@@ -8,10 +8,11 @@
         left: 0;
     }
     input{
+        letter-spacing: 1px;
         caret-color: red;
         box-sizing: border-box;
         padding-left: 25px;
-        color: #4F4F4F;
+        color: red;
     }
     input.big{
         height: 52px;
@@ -20,6 +21,7 @@
     }
     input.big::placeholder{
         letter-spacing: 5px;
+        color: #4F4F4F;
     }
     input.light{
         background-color: #f0f0f0;
@@ -31,7 +33,12 @@
     input.dark{
         background-color: #090909;
     }
+    input.small:focus{
+        outline: none;
+        border: 1px solid white;
+    }
     textarea{
+        letter-spacing: 1px;
         resize: none;
         box-sizing: border-box;
         border: none;
@@ -40,13 +47,15 @@
         background-color: #f0f0f0;
         height: 230px;
         width: 100%;
-        color: #4F4F4F;
+        color: red;
     }
     textarea::placeholder{
         letter-spacing: 5px;
+        color: #4F4F4F;
     }
     input.invalid, textarea.invalid{
-        border: 1px solid red;
+        border: 2px solid red;
+        border-radius: 4px;
     }
 
 }   

@@ -28,7 +28,7 @@ const Header = () => {
         <header>
             <div className={styles.contacts_line}>
                 <img src={mailIcon} alt="mail" />
-                <span>mail@yourcompany.com</span>
+                <span><a href="mailto:mail@yourcompany.com">mail@yourcompany.com</a></span>
                 <img src={phoneIcon} alt="phone" />
                 <span><a href="tel:+8961205889">+896 120 5889 (Toll free)</a></span>
                 <span>Mon - Sat | 10am - 7pm</span>

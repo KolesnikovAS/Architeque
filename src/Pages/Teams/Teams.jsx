@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useWindowSize } from 'react-use';
 import Banner from "../../Containers/Banner/Banner";
 import styles from "./Teams.module.scss";
 import Stuff from "../../Components/Stuff/Stuff"
@@ -14,6 +15,13 @@ import "./FeedbackSlider.scss";
 
 
 const Teams = () => {
+    let [setNavigation, changeNavigation] = useState(true);
+    let { width } = useWindowSize();
+    useEffect(() => {
+        if (width < 600) {
+            changeNavigation(false);
+        } else changeNavigation(true);
+    }, [width]);
     const feedbacks = [{ rank: 3, photo: images.feedbackPhoto1, name: "Brigita Mendez", position: "Conracter", comment: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution." },
                     { rank: 3, photo: images.feedbackPhoto1, name: "Brigita Mendez", position: "Conracter", comment: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution." },
                     { rank: 3, photo: images.feedbackPhoto1, name: "Brigita Mendez", position: "Conracter", comment: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution." },
@@ -53,7 +61,7 @@ const Teams = () => {
                         spaceBetween={50}
                         centeredSlides={true}
                         slidesPerView={1}
-                        navigation
+                        navigation={setNavigation}
                     >
                         {feedbacks.map(({ rank, photo, name, position, comment }, index) =>
                             <SwiperSlide key={index}>

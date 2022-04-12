@@ -15,18 +15,14 @@ header {
             margin-left: auto;
             margin-right: 0;
         }
-        span:hover {
-            color: #aeaeae;
-            a {
-                color: #aeaeae;
-            }
-        }
         span {
-            cursor: pointer;
             margin-right: 24px;
             font-family: Poppins-Regular, sans-serif;
             font-size: 12px;
             color: white;
+            a:hover{
+                color: #aeaeae;
+            }
             a {
                 cursor: pointer;
                 font-family: Poppins-Regular, sans-serif;
@@ -252,9 +248,15 @@ header:after {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 610px) {
     header {
         .contacts_line {
+            span { 
+                font-size: 11px;
+                a {
+                    font-size: 11px;
+                }
+            }
             img:first-child {
                 display: none;
             }
@@ -264,6 +266,7 @@ header:after {
         }
     }
 }
+
 
 @media (max-width: 550px) {
     header {
